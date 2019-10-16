@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_High_Risk_Area` (`auto_id` VARCHAR(32) NOT NULL,`nationality_code` VARCHAR(512) NOT NULL,`address_area` VARCHAR(20) NOT NULL,`finance_type` VARCHAR(512),`crime_type` VARCHAR(512),`danger_desc` VARCHAR(512),`address_status` VARCHAR(2),`update_date` DateTime,reserve_1 varchar(2000),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;", "txtlinesql:Aml_High_Risk_Area_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_High_Risk_Area`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_High_Risk_Area (auto_id VARCHAR(32) NOT NULL,nationality_code VARCHAR(512) NOT NULL,address_area VARCHAR(20) NOT NULL,finance_type VARCHAR(512),crime_type VARCHAR(512),danger_desc VARCHAR(512),address_status VARCHAR(2),update_date DateTime,reserve_1 varchar(2000),PRIMARY KEY (auto_id));", "txtlinesql:Aml_High_Risk_Area_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_High_Risk_Area;"]
+	}]
+}

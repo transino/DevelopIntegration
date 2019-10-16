@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_ModelParam` (`paramCode` VARCHAR(45) NOT NULL,`paramName` VARCHAR(200) NOT NULL,`paramDes` VARCHAR(2000),`paramValue` VARCHAR(2000),`susModelCodes` VARCHAR(2000),`largeModelCodes` VARCHAR(2000),PRIMARY KEY (`paramCode`))ENGINE = InnoDB;", "txtlinesql:aml_modelparam_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_ModelParam`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_ModelParam (paramCode VARCHAR(45) NOT NULL,paramName VARCHAR(200) NOT NULL,paramDes VARCHAR(2000),paramValue VARCHAR(2000),susModelCodes VARCHAR(2000),largeModelCodes VARCHAR(2000),PRIMARY KEY (paramCode));", "txtlinesql:aml_modelparam_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_ModelParam;"]
+	}]
+}

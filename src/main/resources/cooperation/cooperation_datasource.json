@@ -1,0 +1,48 @@
+{
+	"entityDatasourceList": [{
+		"defaultDatasource": true,
+		"password": "root",
+		"driverClassName": "com.mysql.jdbc.Driver",
+		"initSqlList": ["CREATE TABLE  `Cooperation_DatasourceSql` (`strSqlId` varchar(45) NOT NULL,  `strSql` varchar(2000) NOT NULL,`dtCreateTime` DATETIME NOT NULL,`strState` varchar(45) NOT NULL,`strProjectDescription` varchar(2000) DEFAULT NULL,PRIMARY KEY (`strSqlId`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+		"strDatabaseType": "mysql",
+		"userName": "root",
+		"dataSourceName": "cooperation_aml",
+		"url": "jdbc:mysql://localhost:3306/cooperation_aml?characterEncoding=UTF-8"
+	}, {
+		"defaultDatasource": false,
+		"password": "Transino@123",
+		"driverClassName": "com.mysql.jdbc.Driver",
+		"initSqlList": ["CREATE TABLE  `Cooperation_DatasourceSql` (`strSqlId` varchar(45) NOT NULL,  `strSql` varchar(2000) NOT NULL,`dtCreateTime` DATETIME NOT NULL,`strState` varchar(45) NOT NULL,`strProjectDescription` varchar(2000) DEFAULT NULL,PRIMARY KEY (`strSqlId`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+		"strDatabaseType": "mysql",
+		"userName": "aml",
+		"dataSourceName": "cooperation_aml_vpn",
+		"url": "jdbc:mysql://192.168.1.107:3306/cooperation?characterEncoding=UTF-8"
+	},{
+		"defaultDatasource": false,
+		"password": "root",
+		"driverClassName": "com.mysql.jdbc.Driver",
+		"initSqlList": ["CREATE TABLE  `Cooperation_DatasourceSql` (`strSqlId` varchar(45) NOT NULL,  `strSql` varchar(2000) NOT NULL,`dtCreateTime` DATETIME NOT NULL,`strState` varchar(45) NOT NULL,`strProjectDescription` varchar(2000) DEFAULT NULL,PRIMARY KEY (`strSqlId`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+		"strDatabaseType": "mysql",
+		"userName": "root",
+		"dataSourceName": "cooperation",
+		"url": "jdbc:mysql://localhost:3306/cooperation?characterEncoding=UTF-8"
+	}, {
+		"defaultDatasource": false,
+		"password": "root",
+		"driverClassName": "com.mysql.jdbc.Driver",
+		"initSqlList": ["CREATE TABLE  `Cooperation_DatasourceSql` (`strSqlId` varchar(45) NOT NULL,  `strSql` varchar(2000) NOT NULL,`dtCreateTime` DATETIME NOT NULL,`strState` varchar(45) NOT NULL,`strProjectDescription` varchar(2000) DEFAULT NULL,PRIMARY KEY (`strSqlId`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+		"strDatabaseType": "mysql",
+		"userName": "root",
+		"dataSourceName": "cooperation3",
+		"url": "jdbc:mysql://localhost:3306/cooperation3?characterEncoding=UTF-8"
+	},{
+		"userName": "aml_2",
+		"driverClassName": "oracle.jdbc.driver.OracleDriver",
+		"initSqlList": ["CREATE TABLE  Cooperation_DatasourceSql (strSqlId varchar2(45) NOT NULL,  strSql varchar2(2000) NOT NULL,dtCreateTime date NOT NULL,strState varchar2(45) NOT NULL,strProjectDescription varchar2(2000) DEFAULT NULL,PRIMARY KEY (strSqlId))"],
+		"defaultDatasource": false,
+		"strDatabaseType": "oracle",
+		"dataSourceName": "cooperation_oracle",
+		"password": "aml_2",
+		"url": "jdbc:oracle:thin:@192.168.20.113:1521:EASTDB"
+	}]
+}

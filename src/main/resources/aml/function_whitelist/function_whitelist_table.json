@@ -1,0 +1,52 @@
+{
+	"entityTableList": [ {
+		"entityColumnList": [{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "customer_name"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "customer_type",
+			"showColumn": "const:sys_036"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id_type",
+			"showColumn": "const:sys_003"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id_num"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "organize",
+                        "showColumn" : "table:Aml_Branch.branch_name"
+		},{
+			"columnType": "date",
+			"columndescription": "",
+			"columnName": "update_date"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "status",
+			"showColumn": "const:sys_043"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "white_source"
+		}],
+		"autoGenerateId": true,
+		"logicIdColumnSet": [],
+		"idColumnSet": ["auto_id"],
+		"dataSourceName": "",
+		"tableName": "Aml_Whitelist",
+                "cacheRule": "table"
+	}]
+}
+

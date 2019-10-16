@@ -1,0 +1,19 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_SusEtlLog` (`auto_id` VARCHAR(45) NOT NULL,`pboc_branch_code` VARCHAR(45),`susetl_type` VARCHAR(45),`susetl_result` VARCHAR(45),`strUserCode` VARCHAR(45),`date_id` datetime,`etlDate` datetime,`des` VARCHAR(3000),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_SusEtlLog`;"]
+	},{
+      "updateSqlList": ["CREATE TABLE `Aml_SusEtlLog_Detail` (`auto_id` VARCHAR(45) NOT NULL,`log_id` VARCHAR(45),`strName` VARCHAR(200),`susetl_result` VARCHAR(45),`etlDate` datetime,`des` VARCHAR(3000),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+      "dataSourceName": "aml_mysql",
+      "initSqlList": ["DROP TABLE `Aml_SusEtlLog_Detail`;"]
+    },{
+		"updateSqlList": ["CREATE TABLE Aml_SusEtlLog (auto_id VARCHAR(45) NOT NULL,pboc_branch_code VARCHAR(45),susetl_type VARCHAR(45),susetl_result VARCHAR(45),strUserCode VARCHAR(45),date_id datetime,etlDate datetime,des VARCHAR(3000),PRIMARY KEY (auto_id));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_SusEtlLog;"]
+	},{
+      "updateSqlList": ["CREATE TABLE Aml_SusEtlLog_Detail (auto_id VARCHAR(45) NOT NULL,log_id VARCHAR(45),strName VARCHAR(200),susetl_result VARCHAR(45),etlDate datetime,des VARCHAR(3000),PRIMARY KEY (auto_id));"],
+      "dataSourceName": "aml_sqlserver",
+      "initSqlList": ["DROP TABLE Aml_SusEtlLog_Detail;"]
+    }]
+}

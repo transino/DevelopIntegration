@@ -1,0 +1,15 @@
+{
+  "entityDatasourceSqlList": [{
+    "updateSqlList": ["txtsql:testprocedure_sql.sql", "txtlinesql:test_linesql.sql"],
+    "dataSourceName": "cooperation",
+    "initSqlList": ["DROP PROCEDURE `test_procedure`;"]
+  }, {
+    "updateSqlList": ["txtsql:testprocedure_sql.sql", "txtlinesql:test_linesql.sql"],
+    "dataSourceName": "cooperation3",
+    "initSqlList": ["DROP PROCEDURE `test_procedure`;"]
+  }, {
+    "updateSqlList": ["txtsql:proc_susmodel_1101_sql.sql"],
+    "dataSourceName": "cooperation_aml",
+    "initSqlList": ["DROP PROCEDURE `proc_susmodel_1101`;"]
+  }]
+}

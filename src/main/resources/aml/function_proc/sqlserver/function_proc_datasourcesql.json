@@ -1,0 +1,68 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["txtsql:aml_sus1104_view_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='aml_sus1104_view') drop view dbo.aml_sus1104_view;"]
+	},{
+		"updateSqlList": ["txtsql:func_dist_str_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='func_dist_str') drop function dbo.func_dist_str;"]
+	},{
+		"updateSqlList": ["txtsql:func_rule_in_risk_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='func_rule_in_risk') drop function dbo.func_rule_in_risk;"]
+	},{
+		"updateSqlList": ["txtsql:func_rule_compare_risk_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='func_rule_compare_risk') drop function dbo.func_rule_compare_risk;"]
+	},{
+		"updateSqlList": ["txtsql:func_suspcs_code_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='func_suspcs_code') drop function dbo.func_suspcs_code;"]
+	},{
+		"updateSqlList": ["txtsql:proc_cust_ds_risk_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_cust_ds_risk') drop procedure dbo.proc_cust_ds_risk;"]
+	},{
+		"updateSqlList": ["txtsql:proc_cust_dg_risk_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_cust_dg_risk') drop procedure dbo.proc_cust_dg_risk;"]
+	},{
+		"updateSqlList": ["txtsql:proc_cust_risk_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_cust_risk') drop procedure dbo.proc_cust_risk;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1101_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_susmodel_1101') drop procedure dbo.proc_susmodel_1101;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1102_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_susmodel_1102') drop procedure dbo.proc_susmodel_1102;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1103_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_susmodel_1103') drop procedure dbo.proc_susmodel_1103;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1104_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_susmodel_1104') drop procedure dbo.proc_susmodel_1104;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1201_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_susmodel_1201') drop procedure dbo.proc_susmodel_1201;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_2001_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_susmodel_2001') drop procedure dbo.proc_susmodel_2001;"]
+	},{
+		"updateSqlList": ["txtsql:proc_whitemodel_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_whitemodel') drop procedure dbo.proc_whitemodel;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='proc_susmodel') drop procedure dbo.proc_susmodel;"]
+	}]
+}
+

@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_Whitelist` (`auto_id` VARCHAR(50) NOT NULL,`customer_name` VARCHAR(512) NOT NULL,`customer_type` VARCHAR(1) NOT NULL,`id_type` VARCHAR(32) NOT NULL,`id_num` VARCHAR(512),`organize` VARCHAR(512),`white_source` varchar(512),`status` varchar(2),`update_date` DateTime,PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Whitelist`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Whitelist (auto_id VARCHAR(50) NOT NULL,customer_name VARCHAR(512) NOT NULL,customer_type VARCHAR(1) NOT NULL,id_type VARCHAR(32) NOT NULL,id_num VARCHAR(512),organize VARCHAR(512),white_source varchar(512),status varchar(2),update_date DateTime,PRIMARY KEY (auto_id));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Whitelist;"]
+	}]
+}

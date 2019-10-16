@@ -1,0 +1,19 @@
+{
+  "entityDatasourceSqlList": [{
+    "updateSqlList": ["CREATE TABLE `Aml_SusModel` (`susModelCode` VARCHAR(45) NOT NULL,`susModelName` VARCHAR(200) NOT NULL,`enable` VARCHAR(45),`RICD` VARCHAR(200),`RPNC` VARCHAR(200),`RITP` VARCHAR(200),`DETR` VARCHAR(200),`DORP` VARCHAR(200),`ODRP` VARCHAR(200),`TPTR` VARCHAR(200),`OTPR` VARCHAR(200),`STCB` VARCHAR(200),`AOSP` VARCHAR(2000),`des` VARCHAR(2000),`featureCodes` VARCHAR(2000),PRIMARY KEY (`susModelCode`))ENGINE = InnoDB;"],
+    "dataSourceName": "aml_mysql",
+    "initSqlList": ["DROP TABLE `Aml_SusModel`;"]
+  }, {
+    "updateSqlList": ["CREATE TABLE `Aml_STCR` (`featureCode` VARCHAR(50) NOT NULL, `featureName` VARCHAR(200) NOT NULL,`enable` VARCHAR(45),`featureDes` VARCHAR(2000) ,`TOSCs` VARCHAR(2000),susModelCodes VARCHAR(200),PRIMARY KEY (`featureCode`))ENGINE = InnoDB;", "txtlinesql:aml_stcr_linesql.sql"],
+    "dataSourceName": "aml_mysql",
+    "initSqlList": ["DROP TABLE `Aml_STCR`;"]
+  },{
+    "updateSqlList": ["CREATE TABLE Aml_SusModel (susModelCode VARCHAR(45) NOT NULL,susModelName VARCHAR(200) NOT NULL,enable VARCHAR(45),RICD VARCHAR(200),RPNC VARCHAR(200),RITP VARCHAR(200),DETR VARCHAR(200),DORP VARCHAR(200),ODRP VARCHAR(200),TPTR VARCHAR(200),OTPR VARCHAR(200),STCB VARCHAR(200),AOSP VARCHAR(2000),des VARCHAR(2000),featureCodes VARCHAR(2000),PRIMARY KEY (susModelCode));"],
+    "dataSourceName": "aml_sqlserver",
+    "initSqlList": ["DROP TABLE Aml_SusModel;"]
+  }, {
+    "updateSqlList": ["CREATE TABLE Aml_STCR (featureCode VARCHAR(50) NOT NULL, featureName VARCHAR(200) NOT NULL,enable VARCHAR(45),featureDes VARCHAR(2000) ,TOSCs VARCHAR(2000),susModelCodes VARCHAR(200),PRIMARY KEY (featureCode));", "txtlinesql:aml_stcr_linesql.sql"],
+    "dataSourceName": "aml_sqlserver",
+    "initSqlList": ["DROP TABLE Aml_STCR;"]
+  }]
+}

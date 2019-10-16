@@ -1,0 +1,7 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Testproject_Testtable` (`field1` VARCHAR(45) NOT NULL,`field2` VARCHAR(200) NOT NULL,`field3` VARCHAR(200),PRIMARY KEY (`field1`))ENGINE = InnoDB;"],
+		"dataSourceName": "testproject_mysql",
+		"initSqlList": ["DROP TABLE `Testproject_Testtable`;"]
+	}]
+}

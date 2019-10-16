@@ -1,0 +1,135 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_Account_Image",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+				"columnType": "date",
+				"columnDescription": "数据日期",
+				"columnName": "date_id"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "所属机构编码",
+				"columnName": "branch_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户编号",
+				"columnName": "customer_no"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户名称",
+				"columnName": "customer_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "帐户分类",
+				"columnName": "acct_cata",
+				"showColumn": "const:sys_034"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "账户属性",
+				"columnName": "acct_nature_type",
+				"showColumn": "const:sys_035"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "账户类型",
+				"columnName": "acct_type",
+				"showColumn": "const:sys_022"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "账户编号",
+				"columnName": "acct_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "账户名称",
+				"columnName": "acct_name"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "账户开户时间",
+				"columnName": "acct_open_date"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户银行卡类型",
+				"columnName": "bank_card_type",
+				"showColumn": "const:sys_014"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户银行卡其他类型",
+				"columnName": "bank_card_other_type"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "账户状态",
+				"columnName": "acct_status",
+				"showColumn": "const:sys_015"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "账户余额",
+				"columnName": "account_balance"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "代办开户人名称",
+				"columnName": "agent_user_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "代办开户人证件类型",
+				"columnName": "agent_user_crtft_type",
+				"showColumn": "const:sys_003"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "代办开户人证件号码",
+				"columnName": "agent_user_crtft_number"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "代办开户人国籍",
+				"columnName": "agent_user_nationality",
+				"showColumn": "const:sys_011"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "跑批是否覆盖",
+				"columnName": "cover_flag",
+				"showColumn": "const:sys_031"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "特殊业务账户类型",
+				"columnName": "special_type",
+				"showColumn": "const:sys_063"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "更新日期",
+				"columnName": "update_date"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "主键",
+				"columnName": "auto_id"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "校验状态",
+				"columnName": "check_status"
+			}
+		],
+		"dataSourceName": "",
+		"keyNameColumnList": ["customer_no", "customer_name","acct_code","acct_name", "date_id"],
+		"logicIdColumnSet": ["acct_code","date_id"]
+	}]
+}

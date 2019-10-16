@@ -1,0 +1,46 @@
+{
+	"checkRuleTableList": [{
+		"columnDescriptionMap": {},
+		"columnTypeMap": {},
+		"checkRuleList": [{
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(branch_code),emptyCheck|lengthCheck~1~20)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(branch_name),emptyCheck|lengthCheck~1~80)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(branch_phone),lengthCheck~0~20)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(branch_address),lengthCheck~0~500)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}],
+		"tableName": "Aml_Branch",
+		"dataSourceName": "",
+		"checkRuleTableMap": {}
+	}]
+}

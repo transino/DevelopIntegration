@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.zhangqiu.service</groupId>
-  <artifactId>crudcheckservice</artifactId>
+  <artifactId>developintegration</artifactId>
   <version>0.0.1</version>
   <packaging>war</packaging>
 
@@ -113,7 +113,7 @@
                 <configuration>
                     <!-- 注意imageName一定要是符合正则[a-z0-9-_.]的，否则构建不会成功 -->
                     <!-- 详见：https://github.com/spotify/docker-maven-plugin    Invalid repository name ... only [a-z0-9-_.] are allowed-->
-                    <imageName>docker-curdcheckservice</imageName>
+                    <imageName>zhangqiu/docker-developintegration</imageName>
                     <baseImage>java</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.war"]</entryPoint>
                     <dockerHost>http://192.168.110.97:2375</dockerHost>

@@ -1,0 +1,69 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_Branch_Info",
+		"autoGenerateId": false,
+		"idColumnSet": ["pboc_branch_code"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "法人机构编号",
+			"columnName": "pboc_branch_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "法人机构名称",
+			"columnName": "pboc_branch_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "组织机构",
+			"columnName": "branch_codes",
+                        "showColumn" : "table:Aml_Branch.branch_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "行业类别",
+			"columnName": "industry_type",
+                        "showColumn" : "const:sys_019"
+		}, {
+			"columnType": "string",
+			"columnDescription": "社会统一信用代码",
+			"columnName": "unid_social_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "机构注册地国籍",
+			"columnName": "regs_nationality",
+                        "showColumn" : "const:sys_011"
+		}, {
+			"columnType": "date",
+			"columnDescription": "机构注册时间",
+			"columnName": "regs_date"
+		}, {
+			"columnType": "string",
+			"columnDescription": "机构注册地行政区划",
+			"columnName": "regs_address_area",
+                        "showColumn" : "const:sys_005"
+		}, {
+			"columnType": "string",
+			"columnDescription": "经营范围",
+			"columnName": "business_scope"
+		}, {
+			"columnType": "string",
+			"columnDescription": "法人名称",
+			"columnName": "legal_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "法人证件类型",
+			"columnName": "legal_crtft_type",
+                        "showColumn" : "const:sys_001"
+		}, {
+			"columnType": "string",
+			"columnDescription": "法人证件号码",
+			"columnName": "legal_crtft_number"
+		}, {
+			"columnType": "string",
+			"columnDescription": "备用字段1",
+			"columnName": "reserve_1"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": ["pboc_branch_name"],
+        "keyNameColumnList": ["pboc_branch_code","pboc_branch_name"],
+        "cacheRule": "table"
+	}]
+}

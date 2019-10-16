@@ -1,0 +1,12 @@
+{
+  "entityDatasourceList": [{
+    "userName": "root",
+    "driverClassName": "com.mysql.jdbc.Driver",
+    "defaultDatasource": true,
+    "strDatabaseType": "mysql",
+    "dataSourceName": "testproject_mysql",
+    "password": "root",
+    "initSqlList": ["CREATE TABLE  `Cooperation_DatasourceSql` (`strSqlId` varchar(200) NOT NULL,  `strSql` varchar(2000) NOT NULL,`dtCreateTime` DATETIME NOT NULL,`strState` varchar(45) NOT NULL,`strProjectDescription` varchar(2000) DEFAULT NULL,PRIMARY KEY (`strSqlId`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+    "url": "jdbc:mysql://localhost:3306/testproject?characterEncoding=UTF-8"
+  }]
+}

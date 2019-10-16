@@ -1,0 +1,19 @@
+{
+	"entityDatasourceSqlList": [{
+		"initSqlList": ["DROP TABLE `Cooperation_TaskRule`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_TaskRule` (`strRuleCode` VARCHAR(45) NOT NULL,`strRuleName` VARCHAR(45) NOT NULL,`strRuleValue` VARCHAR(2000) NOT NULL,`strRuleType` VARCHAR(45) NOT NULL,PRIMARY KEY (`strRuleCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation"
+	},{
+		"initSqlList": ["DROP TABLE `Cooperation_TaskRule`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_TaskRule` (`strRuleCode` VARCHAR(45) NOT NULL,`strRuleName` VARCHAR(45) NOT NULL,`strRuleValue` VARCHAR(2000) NOT NULL,`strRuleType` VARCHAR(45) NOT NULL,PRIMARY KEY (`strRuleCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation3"
+	},{
+		"initSqlList": ["DROP TABLE `Cooperation_TaskRule`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_TaskRule` (`strRuleCode` VARCHAR(45) NOT NULL,`strRuleName` VARCHAR(45) NOT NULL,`strRuleValue` VARCHAR(2000) NOT NULL,`strRuleType` VARCHAR(45) NOT NULL,PRIMARY KEY (`strRuleCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation_aml"
+	}, {
+		"initSqlList": ["DROP TABLE Cooperation_TaskRule"],
+		"updateSqlList": ["CREATE TABLE Cooperation_TaskRule (strRuleCode VARCHAR2(45) NOT NULL,strRuleName VARCHAR2(45) NOT NULL,strRuleValue VARCHAR2(2000) NOT NULL,strRuleType VARCHAR2(45) NOT NULL,PRIMARY KEY (strRuleCode))"],
+		"dataSourceName": "cooperation_oracle"
+	}]
+}

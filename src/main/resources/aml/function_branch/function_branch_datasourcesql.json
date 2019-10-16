@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_Branch` (`branch_code` VARCHAR(45) NOT NULL,`branch_name` VARCHAR(200) NOT NULL,`branch_phone` VARCHAR(45),`branch_address` VARCHAR(2000),PRIMARY KEY (`branch_code`))ENGINE = InnoDB;","txtlinesql:aml_branch_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Branch`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Branch (branch_code VARCHAR(45) NOT NULL,branch_name VARCHAR(200) NOT NULL,branch_phone VARCHAR(45),branch_address VARCHAR(2000),PRIMARY KEY (branch_code))","txtlinesql:aml_branch_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Branch;"]
+	}]
+}

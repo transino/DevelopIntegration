@@ -1,0 +1,110 @@
+﻿{
+  "entityTableList": [{
+    "tableName": "Aml_SusModel",
+    "autoGenerateId": false,
+    "idColumnSet": ["susModelCode"],
+    "entityColumnList": [{
+      "columnType": "string",
+      "columnDescription": "模型编码",
+      "columnName": "susModelCode"
+    }, {
+      "columnType": "string",
+      "columnDescription": "模型名称",
+      "columnName": "susModelName"
+    }, {
+      "columnType": "string",
+      "columnDescription": "是否启用",
+      "columnName": "enable"
+    }, {
+      "columnType": "string",
+      "columnDescription": "报告机构编码",
+      "columnName": "RICD"
+    }, {
+      "columnType": "string",
+      "columnDescription": "上报网点代码",
+      "columnName": "RPNC"
+    }, {
+      "columnType": "string",
+      "columnDescription": "行业类别",
+      "columnName": "RITP",
+      "showColumn" : "const:sys_019"
+    }, {
+      "columnType": "string",
+      "columnDescription": "通用可疑交易报告紧急程度",
+      "columnName": "DETR"
+    }, {
+      "columnType": "string",
+      "columnDescription": "报送方向",
+      "columnName": "DORP",
+      "showColumn" : "const:sys_017"
+    }, {
+      "columnType": "string",
+      "columnDescription": "其他报送方向",
+      "columnName": "ODRP"
+    }, {
+      "columnType": "string",
+      "columnDescription": "通用可疑交易报告触发点",
+      "columnName": "TPTR",
+      "showColumn" : "const:sys_018"
+    }, {
+      "columnType": "string",
+      "columnDescription": "其他可疑交易报告触发点",
+      "columnName": "OTPR"
+    }, {
+      "columnType": "string",
+      "columnDescription": "资金交易及客户行为情况",
+      "columnName": "STCB"
+    }, {
+      "columnType": "string",
+      "columnDescription": "疑点分析",
+      "columnName": "AOSP"
+    }, {
+      "columnType": "string",
+      "columnDescription": "描述",
+      "columnName": "des"
+    }, {
+      "columnType": "string",
+      "columnDescription": "可疑特征码",
+      "columnName": "featureCodes",
+      "showColumn" : "table:Aml_STCR.featureName"
+    }],
+    "dataSourceName": "",
+    "logicIdColumnSet": [],
+    "keyNameColumnList": ["susModelCode","susModelName"],
+    "cacheRule": "table"
+  }, {
+    "tableName": "Aml_STCR",
+    "autoGenerateId": false,
+    "idColumnSet": ["featureCode"],
+    "entityColumnList": [{
+      "columnType": "string",
+      "columnDescription": "特征码编号",
+      "columnName": "featureCode"
+    }, {
+      "columnType": "string",
+      "columnDescription": "特征码名称",
+      "columnName": "featureName"
+    }, {
+      "columnType": "string",
+      "columnDescription": "是否启用",
+      "columnName": "enable"
+    }, {
+      "columnType": "string",
+      "columnDescription": "描述",
+      "columnName": "featureDes"
+    }, {
+      "columnType": "string",
+      "columnDescription": "犯罪类型",
+      "columnName": "TOSCs",
+      "showColumn" : "const:sys_021"
+    },{
+      "columnType": "string",
+      "columnDescription": "所属可疑模型",
+      "columnName": "susModelCodes"
+    }],
+    "dataSourceName": "",
+    "logicIdColumnSet": [],
+    "keyNameColumnList": ["featureCode","featureName"],
+    "cacheRule": "table"
+  }]
+}

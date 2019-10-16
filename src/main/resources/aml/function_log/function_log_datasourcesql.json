@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_ActionLog` (`auto_id` VARCHAR(45) NOT NULL,`strUserCode` VARCHAR(45),`strActionName` VARCHAR(200),`strActionType` VARCHAR(45),`operationTime` DATETIME,`strDescription` VARCHAR(4000),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_ActionLog`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_ActionLog (auto_id VARCHAR(45) NOT NULL,strUserCode VARCHAR(45),strActionName VARCHAR(200),strActionType VARCHAR(45),operationTime DATETIME,strDescription VARCHAR(4000),PRIMARY KEY (auto_id));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_ActionLog;"]
+	}]
+}

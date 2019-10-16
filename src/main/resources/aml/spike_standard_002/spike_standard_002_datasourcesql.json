@@ -1,0 +1,16 @@
+﻿{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["txtlinesql:aml_cust_risk_cols_1_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+                "initSqlList": [""]
+         },{
+		"updateSqlList": ["if exists(select * from sys.objects where name='proc_cust_dg_risk') drop procedure dbo.proc_cust_dg_risk;"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": [""]
+	},{
+		"updateSqlList": ["txtsql:proc_cust_dg_risk_mssql_sql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": [""]
+	}]
+}
+

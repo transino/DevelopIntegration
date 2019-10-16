@@ -1,0 +1,73 @@
+{
+	"entityTableList": [{
+		"tableName": "Aml_SusEtlLog",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "主键",
+			"columnName": "auto_id"
+		},{
+			"columnType": "string",
+			"columnDescription": "法人机构编号",
+			"columnName": "pboc_branch_code"
+		}, {
+          "columnType": "string",
+          "columnDescription": "抽取类型",
+          "columnName": "susetl_type"
+        }, {
+			"columnType": "string",
+			"columnDescription": "抽取结果",
+			"columnName": "susetl_result"
+		}, {
+			"columnType": "string",
+			"columnDescription": "操作人员",
+			"columnName": "strUserCode"
+		}, {
+			"columnType": "date",
+			"columnDescription": "操作时间",
+			"columnName": "etlDate"
+		}, {
+          "columnType": "date",
+          "columnDescription": "数据时间",
+          "columnName": "date_id"
+        }, {
+			"columnType": "string",
+			"columnDescription": "描述",
+			"columnName": "des"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": []
+	},{
+      "tableName": "Aml_SusEtlLog_Detail",
+      "autoGenerateId": true,
+      "idColumnSet": ["auto_id"],
+      "entityColumnList": [{
+        "columnType": "string",
+        "columnDescription": "主键",
+        "columnName": "auto_id"
+      },{
+        "columnType": "string",
+        "columnDescription": "外键id",
+        "columnName": "log_id"
+      }, {
+        "columnType": "string",
+        "columnDescription": "结点名称",
+        "columnName": "strName"
+      }, {
+        "columnType": "string",
+        "columnDescription": "结点状态",
+        "columnName": "susetl_result"
+      }, {
+        "columnType": "date",
+        "columnDescription": "执行时间",
+        "columnName": "etlDate"
+      }, {
+        "columnType": "string",
+        "columnDescription": "描述",
+        "columnName": "des"
+      }],
+      "dataSourceName": "",
+      "logicIdColumnSet": []
+    }]
+}

@@ -1,0 +1,606 @@
+﻿     {
+	"entityTableList": [{
+		"tableName": "Aml_Suspcs_Case",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+				"columnType": "string",
+				"columnDescription": "主键",
+				"columnName": "auto_id"
+			}, {
+				"columnType": "string",
+				"columnDescription": "数据来源",
+				"columnName": "data_from",
+				"showColumn": "const:sys_045"
+			}, {
+				"columnType": "string",
+				"columnDescription": "删除状态",
+				"columnName": "delete_state"
+			}, {
+				"columnType": "string",
+				"columnDescription": "报送标识",
+				"columnName": "audit_type_state",
+			        "showColumn": "const:sys_044"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic1",
+				"columnName": "show_logic1",
+				"showColumn": "const:sys_046"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic2",
+				"columnName": "show_logic2",
+				"showColumn": "const:sys_046"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic3",
+				"columnName": "show_logic3",
+				"showColumn": "const:sys_046"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic4",
+				"columnName": "show_logic4",
+				"showColumn": "const:sys_046"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic5",
+				"columnName": "show_logic5",
+				"showColumn": "const:sys_046"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic6",
+				"columnName": "show_logic6",
+				"showColumn": "const:sys_046"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic7",
+				"columnName": "show_logic7",
+				"showColumn": "const:sys_046"
+			}, {
+				"columnType": "string",
+				"columnDescription": "show_logic8",
+				"columnName": "show_logic8",
+				"showColumn": "const:sys_046"
+			}, {
+                                "columnType": "string",
+                                "columnDescription": "zip报文名",
+                                "columnName": "report_zpi_name"
+                        }, {
+                                "columnType": "string",
+                                "columnDescription": "xml报文名",
+                                "columnName": "report_xml_name"
+                        }, {
+				"columnType": "string",
+				"columnDescription": "校验状态",
+				"columnName": "check_state",
+				"showColumn": "const:sys_030"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "回执状态",
+				"columnName": "receipt_state",
+				"showColumn": "const:sys_037"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "数据状态",
+				"columnName": "data_state",
+				"showColumn": "const:sys_038"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "报文生成状态",
+				"columnName": "produce_state",
+				"showColumn": "const:sys_039"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "数据时间",
+				"columnName": "date_id"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "可疑事件识别码",
+				"columnName": "suspcs_cdoe"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "可疑模型代码",
+				"columnName": "suspcs_model_code",
+                                "showColumn": "table:Aml_SusModel.susModelName"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "报告机构编码",
+				"columnName": "RICD",
+                                "showColumn": "table:Aml_Branch_Info.pboc_branch_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "上报网点代码",
+				"columnName": "RPNC"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "行业类别",
+				"columnName": "RITP",
+				"showColumn": "const:sys_019"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "通用可疑交易报告紧急程度",
+				"columnName": "DETR",
+				"showColumn": "const:sys_016"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "报送次数标志",
+				"columnName": "TORP"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "初次报送的通用可疑交易报告报文名称",
+				"columnName": "ORXN"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "可疑主体犯罪类型",
+				"columnName": "TOSC",
+				"showColumn": "const:sys_021"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "可疑交易特征代码",
+				"columnName": "STCR",
+				"showColumn": "table:Aml_STCR.featureName"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "报送方向",
+				"columnName": "ODRP",
+				"showColumn": "const:sys_017"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "其他报送方向",
+				"columnName": "DORP"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "通用可疑交易报告触发点",
+				"columnName": "TPTR",
+				"showColumn": "const:sys_018"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "其他可疑交易报告触发点",
+				"columnName": "OTPR"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "资金交易及客户行为情况",
+				"columnName": "STCB"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "疑点分析",
+				"columnName": "AOSP"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "可疑交易或事件起始日期",
+				"columnName": "SBDT"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "可疑交易或事件结束日期",
+				"columnName": "SEDT"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易备注1",
+				"columnName": "ROTF1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易备注2",
+				"columnName": "ROTF2"
+			}
+
+		],
+		"dataSourceName": "",
+		"logicIdColumnSet": ["date_id", "suspcs_cdoe"],
+		"keyNameColumnList": ["date_id", "suspcs_cdoe"],
+		"cacheRule": "table"
+	}, {
+		"tableName": "Aml_Suspcs_Case_Detail",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "主键",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columnDescription": "数据来源",
+			"columnName": "data_from",
+			"showColumn": "const:sys_045"
+		}, {
+			"columnType": "string",
+			"columnDescription": "删除状态",
+			"columnName": "delete_state"
+		}, {
+			"columnType": "string",
+			"columnDescription": "zip报文名",
+			"columnName": "report_zpi_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "xml报文名",
+			"columnName": "report_xml_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "校验状态",
+			"columnName": "check_state",
+			"showColumn": "const:sys_030"
+		}, {
+			"columnType": "string",
+			"columnDescription": "审核意见",
+			"columnName": "audit_opinion"
+		}, {
+			"columnType": "string",
+			"columnDescription": "审核状态",
+			"columnName": "audit_state",
+			"showColumn": "const:sys_040"
+		}, {
+                        "columnType": "string",
+                        "columnDescription": "初审协审人",
+                        "columnName": "junior_help_user"
+                }, {
+                        "columnType": "string",
+                        "columnDescription": "复审协审人",
+                        "columnName": "repeat_help_user"
+                }, {
+                        "columnType": "string",
+                        "columnDescription": "终审协审人",
+                        "columnName": "cutout_help_user"
+                }, {
+			"columnType": "string",
+			"columnDescription": "报送标识",
+			"columnName": "audit_type_state",
+			"showColumn": "const:sys_044"
+		}, {
+			"columnType": "string",
+			"columnDescription": "回执状态",
+			"columnName": "receipt_state"
+		}, {
+			"columnType": "string",
+			"columnDescription": "数据状态",
+			"columnName": "data_state"
+		}, {
+			"columnType": "string",
+			"columnDescription": "报文生成状态",
+			"columnName": "produce_state"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑事件识别码",
+			"columnName": "suspcs_cdoe"
+		}, {
+			"columnType": "date",
+			"columnDescription": "数据时间",
+			"columnName": "date_id"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易流水号",
+			"columnName": "trans_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "组织机构编号",
+			"columnName": "branch_code",
+			"showColumn": "table:Aml_Branch.branch_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "客户类型",
+			"columnName": "customer_type",
+			"showColumn": "const:sys_036"
+		}, {
+			"columnType": "string",
+			"columnDescription": "客户编号",
+			"columnName": "customer_no"
+		}, {
+			"columnType": "string",
+			"columnDescription": "客户名称",
+			"columnName": "customer_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "客户账号",
+			"columnName": "acct_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易金额",
+			"columnName": "trans_amount"
+		}, {
+			"columnType": "string",
+			"columnDescription": "资金用途",
+			"columnName": "trans_use"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易币种",
+			"columnName": "currency",
+			"showColumn": "const:sys_006"
+		}, {
+			"columnType": "string",
+			"columnDescription": "资金收付标志",
+			"columnName": "payment_flag",
+			"showColumn": "const:sys_024"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易方式",
+			"columnName": "trans_type",
+			"showColumn": "const:sys_023"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易发生地国籍",
+			"columnName": "trans_nationality"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易发生地代码",
+			"columnName": "trans_address"
+		}, {
+			"columnType": "date",
+			"columnDescription": "交易发生日期",
+			"columnName": "trans_date"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体犯罪类型",
+			"columnName": "TOSC",
+			"showColumn": "const:sys_021"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑交易特征代码",
+			"columnName": "STCR",
+			"showColumn": "table:Aml_STCR.featureName"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑模型代码",
+			"columnName": "suspcs_model_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "客户资金行为情况",
+			"columnName": "STCB"
+		}, {
+			"columnType": "string",
+			"columnDescription": "疑点分析",
+			"columnName": "AOSP"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体职业（对私）或行业（对公）",
+			"columnName": "SEVC",
+			"showColumn": "const:sys_042"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体姓名/名称",
+			"columnName": "SENM"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体身份证件/证明文件类型",
+			"columnName": "SETP",
+			"showColumn": "const:sys_003"
+		}, {
+			"columnType": "string",
+			"columnDescription": "其他身份证件/证明文件类型",
+			"columnName": "OITP"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体身份证件/证明文件号码",
+			"columnName": "SEID"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体国籍",
+			"columnName": "STNT",
+			"showColumn": "const:sys_011"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体联系方式",
+			"columnName": "SCIF"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体法定代表人姓名",
+			"columnName": "SRNM"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体法定代表人身份证件类型",
+			"columnName": "SRIT",
+			"showColumn": "const:sys_001"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体法定代表人其他身份证件/证明文件类型",
+			"columnName": "ORIT"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体法定代表人身份证件号码",
+			"columnName": "SRID"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体控股股东或实际控制人名称",
+			"columnName": "SCNM"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体控股股东或实际控制人身份证件/证明文件类型",
+			"columnName": "SCIT",
+			"showColumn": "const:sys_003"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体控股股东或实际控制人其他身份证件/证明文件类型",
+			"columnName": "OCIT"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体控股股东或实际控制人身份证件/证明文件号码",
+			"columnName": "SCID"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体所在银行账号",
+			"columnName": "SCBA"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑主体所在银行名称",
+			"columnName": "SCBN"
+		}, {
+			"columnType": "string",
+			"columnDescription": "对方金融机构网点名称",
+			"columnName": "other_inst_lattice_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "对方金融机构网点代码类型",
+			"columnName": "other_inst_lattice_type",
+			"showColumn": "const:sys_041"
+		}, {
+			"columnType": "string",
+			"columnDescription": "对方金融机构网点代码",
+			"columnName": "other_inst_lattice_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "对方金融机构网点行政区划代码",
+			"columnName": "other_inst_lattice_area",
+			"showColumn": "const:sys_005"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易对手姓名/名称",
+			"columnName": "other_customer_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易对手身份证件/证明文件类型",
+			"columnName": "other_customer_crtft_type",
+			"showColumn": "const:sys_003"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易对手身份证件/证明文件号码",
+			"columnName": "other_customer_crtft_number"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易对手账户类型",
+			"columnName": "other_customer_acct_type",
+			"showColumn": "const:sys_022"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易对手账号",
+			"columnName": "other_customer_acct_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易代办人姓名",
+			"columnName": "agent_user_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易代办人身份证件/证明文件类型",
+			"columnName": "agent_user_crtft_type",
+			"showColumn": "const:sys_003"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易代办人身份证件/证明文件号码",
+			"columnName": "agent_user_crtft_number"
+		}, {
+			"columnType": "string",
+			"columnDescription": "交易代办人国籍",
+			"columnName": "agent_user_nationality",
+			"showColumn": "const:sys_011"
+		},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段1",
+				"columnName": "reserve_1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段2",
+				"columnName": "reserve_2"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段3",
+				"columnName": "reserve_3"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段4",
+				"columnName": "reserve_4"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段5",
+				"columnName": "reserve_5"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段6",
+				"columnName": "reserve_6"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段7",
+				"columnName": "reserve_7"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段8",
+				"columnName": "reserve_8"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段9",
+				"columnName": "reserve_9"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段10",
+				"columnName": "reserve_10"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段11",
+				"columnName": "reserve_11"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段12",
+				"columnName": "reserve_12"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段13",
+				"columnName": "reserve_13"
+			}],
+		"dataSourceName": "",
+		"logicIdColumnSet": ["trans_code"],
+		"keyNameColumnList": ["date_id", "suspcs_cdoe", "suspcs_cdoe", "customer_no", "customer_name", "trans_date"]
+	}, {
+		"tableName": "Aml_Suspcs_Comment",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "主键",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columnDescription": "明细ID",
+			"columnName": "detail_id"
+		}, {
+			"columnType": "string",
+			"columnDescription": "审批人",
+			"columnName": "strUserCode"
+		}, {
+			"columnType": "date",
+			"columnDescription": "审批时间",
+			"columnName": "commetTime"
+		}, {
+			"columnType": "string",
+			"columnDescription": "审批状态",
+			"columnName": "commetState"
+		}, {
+			"columnType": "string",
+			"columnDescription": "审批意见",
+			"columnName": "commet"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": []
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	"entityTableList": [{
+		"tableName": "Aml_ActionLog",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "主键",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columnDescription": "用户编号",
+			"columnName": "strUserCode"
+		}, {
+			"columnType": "string",
+			"columnDescription": "事件名称",
+			"columnName": "strActionName"
+		}, {
+			"columnType": "string",
+			"columnDescription": "事件类型",
+			"columnName": "strActionType"
+		}, {
+          "columnType": "date",
+          "columnDescription": "操作时间",
+          "columnName": "operationTime"
+        }, {
+          "columnType": "string",
+          "columnDescription": "描述",
+          "columnName": "strDescription"
+        }],
+		"dataSourceName": "",
+		"logicIdColumnSet": []
+	}]
+}

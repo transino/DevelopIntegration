@@ -1,0 +1,362 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_Customer_Public",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+				"columnType": "string",
+				"columnDescription": "主键",
+				"columnName": "auto_id"
+			}, {
+				"columnType": "string",
+				"columnDescription": "校验状态",
+				"columnName": "check_status"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户编号",
+				"columnName": "customer_no"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户名称",
+				"columnName": "customer_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "所属机构编码",
+				"columnName": "branch_code"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "数据日期",
+				"columnName": "date_id"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "企业行业",
+				"columnName": "industry_code",
+				"showColumn": "const:sys_004"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "企业注册地区代码",
+				"columnName": "register_area",
+				"showColumn": "const:sys_005"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "企业成立日期",
+				"columnName": "establish_date"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "法定代表人名称",
+				"columnName": "legal_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "法定代表人证件类型",
+				"columnName": "legal_crtft_type",
+				"showColumn": "const:sys_001"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "法定代表人其他证件类型",
+				"columnName": "legal_other_crtft_type"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "法定代表人证件号码",
+				"columnName": "legal_crtft_number"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "控股股东或实际控制人名称",
+				"columnName": "controller_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "控股股东或实际控制人证件类型",
+				"columnName": "controller_crtft_type",
+				"showColumn": "const:sys_003"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "控股股东或实际控制人其他证件类型",
+				"columnName": "controller_oher_crtft_type"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "控股股东或实际控制人证件号码",
+				"columnName": "controller_crtft_number"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户国籍1",
+				"columnName": "nationality_code1",
+				"showColumn": "const:sys_011"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户国籍2",
+				"columnName": "nationality_code2",
+				"showColumn": "const:sys_011"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户联系电话1",
+				"columnName": "phone_number1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户联系电话2",
+				"columnName": "phone_number2"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "联系地址",
+				"columnName": "contact_address"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "联系地址区域代码",
+				"columnName": "contact_area",
+				"showColumn": "const:sys_005"
+			}, {
+				"columnType": "string",
+				"columnDescription": "经营地址1国籍",
+				"columnName": "management_nationality_code1",
+				"showColumn": "const:sys_011"
+			}, {
+
+				"columnType": "string",
+				"columnDescription": "经营地址1行政区划",
+				"columnName": "management_area1",
+				"showColumn": "const:sys_005"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "详细经营地址1",
+				"columnName": "management_address1"
+			}, {
+				"columnType": "string",
+				"columnDescription": "经营地址2国籍",
+				"columnName": "management_nationality_code2",
+				"showColumn": "const:sys_011"
+			}, {
+
+				"columnType": "string",
+				"columnDescription": "经营地址2行政区划",
+				"columnName": "management_area2",
+				"showColumn": "const:sys_005"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "详细经营地址2",
+				"columnName": "management_address2"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户其他联系方式1",
+				"columnName": "cell_phone1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户其他联系方式2",
+				"columnName": "cell_phone2"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户证件/证件类型",
+				"columnName": "crtft_type",
+				"showColumn": "const:sys_002"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户证件/证件号码",
+				"columnName": "crtft_number"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "客户证件到期日期",
+				"columnName": "crtft_due_date"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "其他证件/证件类型",
+				"columnName": "other_crtft_type"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "建立日期（与金融机构建立关系的日期）",
+				"columnName": "open_date"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "营业执照号码",
+				"columnName": "business_license_code"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "营业执照有效期限",
+				"columnName": "business_license_expire_date"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "注册资金",
+				"columnName": "register_balance"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "注册资金币种",
+				"columnName": "register_currency",
+				"showColumn": "const:sys_006"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "税务登记证号码",
+				"columnName": "regist_certft_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "组织机构代码",
+				"columnName": "organization_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "经营范围",
+				"columnName": "business_scope"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "统一社会信用证代码",
+				"columnName": "unid_social_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "上市标识",
+				"columnName": "listing_flag",
+				"showColumn": "const:sys_007"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "与客户建立或维护业务关系的渠道",
+				"columnName": "business_rela_type",
+				"showColumn": "const:sys_008"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户注册地与金融机构距离",
+				"columnName": "register_inst_distance"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户经营地与金融机构距离",
+				"columnName": "management_inst_distance"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "企业类型",
+				"columnName": "enterprise_type",
+				"showColumn": "const:sys_009"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "是否配合金融机构展开尽职调查工作",
+				"columnName": "cust_cooperate_flag",
+				"showColumn": "const:sys_031"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "跑批是否覆盖",
+				"columnName": "cover_flag",
+				"showColumn": "const:sys_031"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "更新日期",
+				"columnName": "update_date"
+			},
+                        {
+				"columnType": "string",
+				"columnDescription": "是否评级",
+				"columnName": "risk_flag"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "数据标识",
+				"columnName": "data_flag",
+				"showColumn": "const:sys_032"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段1:行政区划缓存调用",
+				"columnName": "reserve_1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段2:是否黑名单客户",
+				"columnName": "reserve_2"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段3",
+				"columnName": "reserve_3"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段4",
+				"columnName": "reserve_4"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段5",
+				"columnName": "reserve_5"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段6",
+				"columnName": "reserve_6"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段7",
+				"columnName": "reserve_7"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段8",
+				"columnName": "reserve_8"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段9",
+				"columnName": "reserve_9"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段10",
+				"columnName": "reserve_10"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段11",
+				"columnName": "reserve_11"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段12",
+				"columnName": "reserve_12"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段13",
+				"columnName": "reserve_13"
+			}
+		],
+		"dataSourceName": "",
+                "logicIdColumnSet": ["customer_no", "date_id"],
+		"keyNameColumnList": ["customer_no", "customer_name", "date_id"]
+	}]
+}

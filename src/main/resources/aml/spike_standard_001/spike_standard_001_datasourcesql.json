@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["txtlinesql:spike_standard_001001_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["delete from Aml_Const where ConstNum = 'sys_998';"]
+	},{
+		"updateSqlList": ["txtlinesql:spike_standard_001001_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["delete from Aml_Const where ConstNum = 'sys_998';"]
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	"entityDatasourceSqlList": [{
+		"initSqlList": ["DROP TABLE `Cooperation_Project`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_Project` (`strProjectCode` VARCHAR(45) NOT NULL,`strProjectName` VARCHAR(200) NOT NULL,`strSourcePath` VARCHAR(200) NOT NULL,`strProjectDescription` VARCHAR(200),`strUserCode` VARCHAR(45) NOT NULL,PRIMARY KEY (`strProjectCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation"
+	},{
+		"initSqlList": ["DROP TABLE `Cooperation_Project`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_Project` (`strProjectCode` VARCHAR(45) NOT NULL,`strProjectName` VARCHAR(200) NOT NULL,`strSourcePath` VARCHAR(200) NOT NULL,`strProjectDescription` VARCHAR(200),`strUserCode` VARCHAR(45) NOT NULL,PRIMARY KEY (`strProjectCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation3"
+	},{
+		"initSqlList": ["DROP TABLE `Cooperation_Project`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_Project` (`strProjectCode` VARCHAR(45) NOT NULL,`strProjectName` VARCHAR(200) NOT NULL,`strSourcePath` VARCHAR(200) NOT NULL,`strProjectDescription` VARCHAR(200),`strUserCode` VARCHAR(45) NOT NULL,PRIMARY KEY (`strProjectCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation_aml"
+	},{
+		"initSqlList": ["DROP TABLE Cooperation_Project"],
+		"updateSqlList": ["CREATE TABLE Cooperation_Project (strProjectCode VARCHAR2(45) NOT NULL,strProjectName VARCHAR2(200) NOT NULL,strSourcePath VARCHAR2(200) NOT NULL,strProjectDescription VARCHAR2(200),strUserCode VARCHAR2(45) NOT NULL,PRIMARY KEY (strProjectCode))"],
+		"dataSourceName": "cooperation_oracle"
+	}]
+}

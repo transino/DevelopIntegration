@@ -1,0 +1,20 @@
+﻿delete from aml_modelparam;
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('black_recall_day', '黑名单历史回溯年数', '新增黑名单回溯的历史期限，以年为单位', '3', '1101', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('change_inuot_range_e', '短期内转入金额/转出金额最大比例', '', '1.2', '1104', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('change_inuot_range_s', '短期内转入金额/转出金额最小比例', '', '0.8', '1104', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('change_out_num_df', '短期内转入笔数/转出笔数最小比例(集中转入分散转出)', '转入笔数/转出笔数比例值公式', '0.2', '1104', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('change_out_num_fd', '短期内转入笔数/转出笔数最大比例(分散转入集中转出)', '转入笔数/转出笔数比例值范围', '5', '1104', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('large_money_dg_cny', '长期闲置账户近期对公大额', '长期闲置账户近期对公大额', '2000000', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('large_money_ds_cny', '长期闲置账户近期期个人大额', '长期闲置账户近期期个人大额', '50000', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('long_idle_day', '长期闲置交易天数', '长期闲置账户交易天数', '365', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('long_idle_dg_cny', '对公长期闲置交易金额', '对公长期闲置交易金额', '50000', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('long_idle_ds_cny', '个人长期闲置交易金额', '个人长期闲置交易金额', '1000', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('long_idle_number', '长期闲置交易笔数', '长期闲置交易笔数', '5', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('often_number', '近期频繁交易笔数', '近期频繁交易笔数', '5', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('short_day', '短期天数', '短期交易天数', '3', '1104', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('short_large_dg_cny', '短期内对公大额', '短期内集中转入分散转出或分散转入集中转出对公大额', '200000', '1104', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('short_large_ds_cny', '短期内个人大额', '短期内集中转入分散转出或分散转入集中转出对公大额', '20000', '1104', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('trans_day', '近期天数', '', '10', '1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('white_front_back_position', '白名单前后置配置', '1、前置（当可疑交易命中白名单，系统后台将命中的交易提示，不删除）；2、后置（当可疑交易命中白名单，系统后台将命中的交易删除，不提示）；', '1', '1102,1103', '');
+INSERT INTO aml_modelparam(paramCode, paramName, paramDes, paramValue, susModelCodes, largeModelCodes) VALUES ('white_list_active', '白名单作用位置', '1、白名单作用于用户名称；2、白名单作用于用户证件；3、白名单作用于用户名称/用户证件', '3', '1201,1106,1107,1104,1105,1102,1103,2001,1101', '');
+

@@ -1,0 +1,52 @@
+{
+	"entityDatasourceSqlList": [
+        {
+		"updateSqlList": ["CREATE TABLE `Aml_Grade_Weight` (`subitem_no` VARCHAR(200) NOT NULL,`subitem_name` VARCHAR(200),`subitem_category` VARCHAR(200),`customer_type` VARCHAR(200),`subitem_score` VARCHAR(200),`subitem_weight` VARCHAR(200),PRIMARY KEY (`subitem_no`))ENGINE = InnoDB;", "txtlinesql:aml_grade_weight_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Grade_Weight`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE `Aml_Grade_Score` (`auto_id` VARCHAR(50) NOT NULL,`category` VARCHAR(200),`value` VARCHAR(2000),`score` VARCHAR(45),`subitem_nos` VARCHAR(2000),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;", "txtlinesql:aml_grade_score_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Grade_Score`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE `aml_cust_risk_data` (`auto_id` VARCHAR(50) NOT NULL,`cols_name` VARCHAR(200),`cols_isnull` VARCHAR(200),`table_name` VARCHAR(200),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `aml_cust_risk_data`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE `aml_cust_risk_cols` (`auto_id` VARCHAR(50) NOT NULL,`cols_name` VARCHAR(200),`cols_remarks` VARCHAR(2000),`cols_isnull` VARCHAR(200),`table_name` VARCHAR(200),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;","txtlinesql:aml_cust_risk_cols_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `aml_cust_risk_cols`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE `aml_cust_susdata` (`auto_id` VARCHAR(50) NOT NULL,`date_id` datetime,`customer_no` VARCHAR(200),`customer_type` varchar(20),`suscount` VARCHAR(200),`blackcount` VARCHAR(200),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `aml_cust_susdata`;"]
+	}, {
+		"updateSqlList": ["create table aml_risk_cust(auto_id varchar(50),customer_type varchar(20),customer_no varchar(200))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `aml_risk_cust`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE Aml_Grade_Weight (subitem_no VARCHAR(200) NOT NULL,subitem_name VARCHAR(200),subitem_category VARCHAR(200),customer_type VARCHAR(200),subitem_score VARCHAR(200),subitem_weight VARCHAR(200),PRIMARY KEY (subitem_no))", "txtlinesql:aml_grade_weight_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Grade_Weight;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE Aml_Grade_Score (auto_id VARCHAR(45) NOT NULL,category VARCHAR(200),value VARCHAR(2000),score VARCHAR(45),subitem_nos VARCHAR(2000),PRIMARY KEY (auto_id))", "txtlinesql:aml_grade_score_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Grade_Score;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE aml_cust_risk_data (auto_id VARCHAR(50) NOT NULL,cols_name VARCHAR(200),cols_isnull VARCHAR(200),table_name VARCHAR(200),PRIMARY KEY (auto_id))"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE aml_cust_risk_data;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE aml_cust_risk_cols (auto_id VARCHAR(50) NOT NULL,cols_name VARCHAR(200),cols_remarks VARCHAR(2000),cols_isnull VARCHAR(200),table_name VARCHAR(200),PRIMARY KEY (auto_id))","txtlinesql:aml_cust_risk_cols_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE aml_cust_risk_cols;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE aml_cust_susdata (auto_id VARCHAR(50) NOT NULL,date_id datetime,customer_no VARCHAR(200),customer_type varchar(20),suscount VARCHAR(200),blackcount VARCHAR(200),PRIMARY KEY (auto_id));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE aml_cust_susdata;"]
+	}, {
+		"updateSqlList": ["create table aml_risk_cust(auto_id varchar(50),customer_type varchar(20),customer_no varchar(200));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE `aml_risk_cust`;"]
+	}, ]
+}

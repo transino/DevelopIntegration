@@ -1,0 +1,33 @@
+{
+	"entityTableList": [ {
+		"entityColumnList": [{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "main_currency_code",
+			"showColumn": "const:sys_006"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "converted_currency",
+			"showColumn": "const:sys_006"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "exchange_rate"
+		},{
+			"columnType": "date",
+			"columndescription": "",
+			"columnName": "update_date"
+		}],
+		"autoGenerateId": true,
+		"logicIdColumnSet": ["main_currency_code","converted_currency"],
+		"idColumnSet": ["auto_id"],
+		"dataSourceName": "",
+		"tableName": "Aml_Exchange_Rate"
+	}]
+}
+

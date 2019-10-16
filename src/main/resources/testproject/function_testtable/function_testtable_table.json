@@ -1,0 +1,21 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Testproject_Testtable",
+		"autoGenerateId": false,
+		"idColumnSet": ["field1"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "field1",
+			"columnName": "field1"
+		}, {
+			"columnType": "string",
+			"columnDescription": "field2",
+			"columnName": "field2"
+		}, {
+			"columnType": "string",
+			"columnDescription": "field3",
+			"columnName": "field3"
+		}],
+		"dataSourceName": ""
+	}]
+}

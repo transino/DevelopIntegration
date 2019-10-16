@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_SusDownloadLog` (`auto_id` VARCHAR(45) NOT NULL,`pboc_branch_code` VARCHAR(45) NOT NULL,`report_type` VARCHAR(45),`report_zpi_path` VARCHAR(200),`report_xml_paths` VARCHAR(3000),`strUserCode` VARCHAR(45),`downloadDate` datetime,`report_zpi_index` VARCHAR(45),`report_xml_index` VARCHAR(45),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_SusDownloadLog`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_SusDownloadLog (auto_id VARCHAR(45) NOT NULL,pboc_branch_code VARCHAR(45) NOT NULL,report_type VARCHAR(45),report_zpi_path VARCHAR(200),report_xml_paths VARCHAR(3000),strUserCode VARCHAR(45),downloadDate datetime,report_zpi_index VARCHAR(45),report_xml_index VARCHAR(45),PRIMARY KEY (auto_id));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_SusDownloadLog;"]
+	}]
+}

@@ -1,0 +1,2 @@
+﻿create view aml_sus1104_view as
+select `atr`.`customer_no` AS `customer_no`,`atr`.`currency` AS `currency`,`atr`.`payment_flag` AS `payment_flag`,sum(`atr`.`trans_amount`) AS `trans_amount`,sum(`atr`.`trans_amount_cny`) AS `trans_amount_cny`,count(1) AS `sum_number`,`atr`.`customer_type` AS `customer_type` from `aml_transaction_run` `atr` group by `atr`.`customer_no`,`atr`.`currency`,`atr`.`payment_flag`,`atr`.`customer_type`

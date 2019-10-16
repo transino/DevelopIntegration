@@ -1,0 +1,11 @@
+{
+  "entityDatasourceSqlList": [{
+    "updateSqlList": ["txtsql:aml_grade_view_mysql_sql.sql"],
+    "dataSourceName": "aml_mysql",
+    "initSqlList": ["DROP FUNCTION if exists `view aml_grade`;"]
+  },{
+    "updateSqlList": ["txtsql:aml_grade_view_mssql_sql.sql"],
+    "dataSourceName": "aml_sqlserver",
+    "initSqlList": ["DROP VIEW aml_grade_view;"]
+  }]
+}

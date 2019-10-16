@@ -1,0 +1,15 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["create table Aml_Customer_Beneficiary(auto_id varchar(200),  check_status varchar(200),  date_id datetime,  customer_no varchar(200) ,  customer_name varchar(512) ,  branch_code varchar(200) ,  profit_type varchar(200) ,  profit_name varchar(512) ,  profit_area varchar(200) ,  profit_address varchar(512) ,  profit_crtft_type varchar(200) ,  profit_crtft_no varchar(512) ,  profit_crtft_expire_date datetime,  profit_shares varchar(200) ,  profit_position varchar(128) ,  cover_flag varchar(200) ,  profit_remarks varchar(1000) ,  update_date datetime , reserve_1 varchar(1000),reserve_2 varchar(500),reserve_3 varchar(500),reserve_4 varchar(500),reserve_5 varchar(500),reserve_6 varchar(500),reserve_7 varchar(500),reserve_8 date,reserve_9 date,reserve_10 date,reserve_11 varchar(200),reserve_12 varchar(200),reserve_13 varchar(200), primary key(auto_id) )ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Customer_Beneficiary`;"]
+	}, {
+		"updateSqlList": ["create table Aml_Customer_Beneficiary(auto_id varchar2(200),  check_status varchar2(200),  date_id date,  customer_no varchar2(200) ,  customer_name varchar2(512) ,  branch_code varchar2(200) ,  profit_type varchar2(200) ,  profit_name varchar2(512) ,  profit_area varchar2(200),  profit_address varchar2(512) ,  profit_crtft_type varchar2(200) ,  profit_crtft_no varchar2(512) ,  profit_crtft_expire_date varchar2(512) ,  profit_shares varchar2(200) ,  profit_position varchar2(128) ,  cover_flag varchar2(200) ,  profit_remarks varchar2(4000) ,  update_date date , reserve_1 varchar2(2000),reserve_2 varchar2(2000),reserve_3 varchar2(2000),reserve_4 varchar2(2000),reserve_5 varchar2(2000),reserve_6 varchar2(2000),reserve_7 varchar2(2000),reserve_8 date,reserve_9 date,reserve_10 date,reserve_11 varchar2(200),reserve_12 varchar2(200),reserve_13 varchar2(200), primary key(auto_id) )"],
+		"dataSourceName": "aml_oracle",
+		"initSqlList": ["DROP TABLE Aml_Customer_Beneficiary"]
+	}, {
+		"updateSqlList": ["create table Aml_Customer_Beneficiary(auto_id varchar(200),  check_status varchar(200),  date_id datetime,  customer_no varchar(200) ,  customer_name varchar(512) ,  branch_code varchar(200) ,  profit_type varchar(200) ,  profit_name varchar(512) ,  profit_area varchar(200) ,  profit_address varchar(512) ,  profit_crtft_type varchar(200) ,  profit_crtft_no varchar(512) ,  profit_crtft_expire_date datetime,  profit_shares varchar(200) ,  profit_position varchar(128) ,  cover_flag varchar(200) ,  profit_remarks varchar(4000) ,  update_date datetime , reserve_1 varchar(2000),reserve_2 varchar(2000),reserve_3 varchar(2000),reserve_4 varchar(2000),reserve_5 varchar(2000),reserve_6 varchar(2000),reserve_7 varchar(2000),reserve_8 date,reserve_9 date,reserve_10 date,reserve_11 varchar(200),reserve_12 varchar(200),reserve_13 varchar(200), primary key(auto_id) )"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Customer_Beneficiary"]
+	}]
+}

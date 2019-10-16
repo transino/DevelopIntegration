@@ -1,0 +1,31 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_Grade` (`auto_id` VARCHAR(45) NOT NULL,`audit_state` VARCHAR(200),`grade_code` VARCHAR(45),`date_id` DATETIME,`customer_type` VARCHAR(45),`customer_no` VARCHAR(100),`customer_name` VARCHAR(200),`grade_score` decimal(20,3),`credit_rate_code3` VARCHAR(45),`credit_rate_code4` VARCHAR(45),`credit_rate_code5` VARCHAR(45),`grade_number` VARCHAR(45),`grade_date` DATETIME,`grade_state` VARCHAR(45),`risk_due_date3` datetime,`risk_due_date4` datetime,`risk_due_date5` datetime,`junior_help_user` varchar(512),`repeat_help_user` varchar(512),`cutout_help_user` varchar(512),`branch_code` VARCHAR(45),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Grade`;"]
+	},{
+      "updateSqlList": ["CREATE TABLE `Aml_Grade_Detail` (`auto_id` VARCHAR(45) NOT NULL,`grade_code` VARCHAR(45),`customer_no` VARCHAR(45),`customer_name` VARCHAR(200),`grade_date` DATETIME,`risk_section_code` VARCHAR(100),`risk_section_name` VARCHAR(1000),`new_grade_score` decimal(20,3),`system_grade_score` decimal(20,3),`rule_source` VARCHAR(45),`grade_source` VARCHAR(45),`grade_cust` VARCHAR(45),`grade_reason` VARCHAR(2000),PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+      "dataSourceName": "aml_mysql",
+      "initSqlList": ["DROP TABLE `Aml_Grade_Detail`;"]
+    },{
+      "dataSourceName": "aml_mysql",
+      "initSqlList": ["DROP TABLE `Aml_Grade_Comment`;"],
+      "updateSqlList": [
+        "create table Aml_Grade_Comment(auto_id varchar(50),grade_id varchar(50),strUserCode VARCHAR(50),commetTime datetime,commetState VARCHAR(45),commet VARCHAR(4000),PRIMARY KEY (`auto_id`))ENGINE=InnoDB DEFAULT CHARSET=utf8;"
+      ]
+    },{
+		"updateSqlList": ["CREATE TABLE Aml_Grade (auto_id VARCHAR(45) NOT NULL,audit_state VARCHAR(200),grade_code VARCHAR(45),date_id DATETIME,customer_type VARCHAR(45),customer_no VARCHAR(100),customer_name VARCHAR(200),grade_score decimal(20,3),credit_rate_code3 VARCHAR(45),credit_rate_code4 VARCHAR(45),credit_rate_code5 VARCHAR(45),grade_number VARCHAR(45),grade_date DATETIME,grade_state VARCHAR(45),risk_due_date3 datetime,risk_due_date4 datetime,risk_due_date5 datetime,junior_help_user varchar(512),repeat_help_user varchar(512),cutout_help_user varchar(512),branch_code VARCHAR(45),PRIMARY KEY (auto_id))"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Grade;"]
+	},{
+      "updateSqlList": ["CREATE TABLE Aml_Grade_Detail (auto_id VARCHAR(45) NOT NULL,grade_code VARCHAR(45),customer_no VARCHAR(45),customer_name VARCHAR(200),grade_date DATETIME,risk_section_code VARCHAR(100),risk_section_name VARCHAR(1000),new_grade_score decimal(20,3),system_grade_score decimal(20,3),rule_source VARCHAR(45),grade_source VARCHAR(45),grade_cust VARCHAR(45),grade_reason VARCHAR(2000),PRIMARY KEY (auto_id))"],
+      "dataSourceName": "aml_sqlserver",
+      "initSqlList": ["DROP TABLE Aml_Grade_Detail;"]
+    },{
+      "dataSourceName": "aml_sqlserver",
+      "initSqlList": ["DROP TABLE Aml_Grade_Comment;"],
+      "updateSqlList": [
+        "create table Aml_Grade_Comment(auto_id varchar(50),grade_id varchar(50),strUserCode VARCHAR(50),commetTime datetime,commetState VARCHAR(45),commet VARCHAR(4000),PRIMARY KEY (auto_id))"
+      ]
+    }]
+}

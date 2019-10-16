@@ -1,0 +1,46 @@
+{
+	"checkRuleTableList": [{
+		"checkRuleList": [{
+			"descriptionColumnMap": null,
+			"level": 0,
+			"match": "",
+			"description": "",
+			"index": 0,
+			"rule": "@CHECK(@COLUMN(strUserCode),emptyCheck)",
+			"optional": false,
+			"ruleColumnMap": null
+		}, {
+			"descriptionColumnMap": null,
+			"level": 0,
+			"match": "",
+			"description": "",
+			"index": 0,
+			"rule": "@CHECK(@COLUMN(strUserName),emptyCheck)",
+			"optional": false,
+			"ruleColumnMap": null
+		}, {
+			"descriptionColumnMap": null,
+			"level": 0,
+			"match": "",
+			"description": "",
+			"index": 0,
+			"rule": "@CHECK(@COLUMN(strPassword),emptyCheck)",
+			"optional": false,
+			"ruleColumnMap": null
+		}, {
+			"descriptionColumnMap": null,
+			"level": 0,
+			"match": "",
+			"description": "",
+			"index": 0,
+			"rule": "@CHECK(@COLUMN(strRoleTypes),emptyCheck)",
+			"optional": false,
+			"ruleColumnMap": null
+		}],
+		"checkRuleTableMap": {},
+		"columnTypeMap": {},
+		"dataSourceName": "",
+		"columnDescriptionMap": {},
+		"tableName": "Cooperation_User"
+	}]
+}

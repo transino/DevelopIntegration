@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_Exchange_Rate` (`auto_id` VARCHAR(32) NOT NULL,`main_currency_code` VARCHAR(12) NOT NULL,`converted_currency` VARCHAR(12) NOT NULL,`exchange_rate` DECIMAL(20,8),`update_date` DateTime,PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Exchange_Rate`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Exchange_Rate (auto_id VARCHAR(32) NOT NULL,main_currency_code VARCHAR(12) NOT NULL,converted_currency VARCHAR(12) NOT NULL,exchange_rate DECIMAL(20,8),update_date DateTime,PRIMARY KEY (auto_id));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Exchange_Rate;"]
+	}]
+}
