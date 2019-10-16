@@ -1,0 +1,62 @@
+{
+	"checkRuleTableList": [{
+		"columnDescriptionMap": {},
+		"columnTypeMap": {},
+		"checkRuleList": [{
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(subitem_no),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}],
+		"tableName": "Aml_Grade_Weight",
+		"dataSourceName": "",
+		"checkRuleTableMap": {}
+	},{
+      "columnDescriptionMap": {},
+      "columnTypeMap": {},
+      "checkRuleList": [{
+        "index": 0,
+        "level": 0,
+        "description": "",
+        "rule": "@CHECK(@COLUMN(value),emptyCheck|lengthCheck~1~1000)",
+        "optional": false,
+        "match": "",
+        "descriptionColumnMap": null,
+        "ruleColumnMap": null
+      },{
+        "index": 0,
+        "level": 0,
+        "description": "",
+        "rule": "@CHECK(@COLUMN(score),emptyCheck|numberCheck|lengthCheck~1~3)",
+        "optional": false,
+        "match": "",
+        "descriptionColumnMap": null,
+        "ruleColumnMap": null
+      },{
+        "index": 0,
+        "level": 0,
+        "description": "",
+        "rule": "@CHECK(@COLUMN(subitem_nos),emptyCheck|lengthCheck~1~1000)",
+        "optional": false,
+        "match": "",
+        "descriptionColumnMap": null,
+        "ruleColumnMap": null
+      },{
+        "index": 0,
+        "level": 0,
+        "description": "",
+        "rule": "@CHECK(@COLUMN(category),emptyCheck|lengthCheck~1~100)",
+        "optional": false,
+        "match": "",
+        "descriptionColumnMap": null,
+        "ruleColumnMap": null
+      }],
+      "tableName": "Aml_Grade_Score",
+      "dataSourceName": "",
+      "checkRuleTableMap": {}
+    }]
+}

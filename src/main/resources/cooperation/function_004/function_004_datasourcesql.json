@@ -1,0 +1,19 @@
+{
+	"entityDatasourceSqlList": [{
+		"initSqlList": ["DROP TABLE `Cooperation_Task`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_Task` (`strTaskCode` VARCHAR(45) NOT NULL,`strProjectCode` VARCHAR(45) NOT NULL,`strTaskName` VARCHAR(200) NOT NULL,`dtCreateDate` DATETIME NOT NULL,`strTaskDescription` VARCHAR(200),`strUserCode` VARCHAR(45) NOT NULL,`strRuleCodes` VARCHAR(2000),PRIMARY KEY (`strTaskCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation"
+	}, {
+		"initSqlList": ["DROP TABLE `Cooperation_Task`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_Task` (`strTaskCode` VARCHAR(45) NOT NULL,`strProjectCode` VARCHAR(45) NOT NULL,`strTaskName` VARCHAR(200) NOT NULL,`dtCreateDate` DATETIME NOT NULL,`strTaskDescription` VARCHAR(200),`strUserCode` VARCHAR(45) NOT NULL,`strRuleCodes` VARCHAR(2000),PRIMARY KEY (`strTaskCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation3"
+	}, {
+		"initSqlList": ["DROP TABLE `Cooperation_Task`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_Task` (`strTaskCode` VARCHAR(45) NOT NULL,`strProjectCode` VARCHAR(45) NOT NULL,`strTaskName` VARCHAR(200) NOT NULL,`dtCreateDate` DATETIME NOT NULL,`strTaskDescription` VARCHAR(200),`strUserCode` VARCHAR(45) NOT NULL,`strRuleCodes` VARCHAR(2000),PRIMARY KEY (`strTaskCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation_aml"
+	}, {
+		"initSqlList": ["DROP TABLE Cooperation_Task"],
+		"updateSqlList": ["CREATE TABLE Cooperation_Task (strTaskCode VARCHAR2(45) NOT NULL,strProjectCode VARCHAR2(45) NOT NULL,strTaskName VARCHAR2(200) NOT NULL,dtCreateDate date NOT NULL,strTaskDescription VARCHAR2(200),strUserCode VARCHAR2(45) NOT NULL,strRuleCodes VARCHAR2(2000),PRIMARY KEY (strTaskCode))"],
+		"dataSourceName": "cooperation_oracle"
+	}]
+}

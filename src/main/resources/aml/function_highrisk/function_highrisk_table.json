@@ -1,0 +1,48 @@
+﻿{
+	"entityTableList": [ {
+		"entityColumnList": [{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "nationality_code",
+			"showColumn": "const:sys_011"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "address_area",
+			"showColumn": "const:sys_005"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "finance_type"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "crime_type"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "danger_desc"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "address_status"
+		},{
+			"columnType": "date",
+			"columndescription": "",
+			"columnName": "update_date"
+		},{
+			"columnType": "string",
+			"columndescription": "行政区划代码缓存",
+			"columnName": "reserve_1"
+		}],
+		"autoGenerateId": true,
+		"logicIdColumnSet": ["nationality_code","address_area"],
+		"idColumnSet": ["auto_id"],
+		"dataSourceName": "",
+		"tableName": "Aml_High_Risk_Area"
+	}]
+}

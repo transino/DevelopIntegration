@@ -1,0 +1,41 @@
+{
+	"entityTableList": [ {
+		"entityColumnList": [{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "dign_user_name"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "dign_user_title"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "dign_user_crtft_type",
+			"showColumn": "const:sys_001"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "dign_user_crtft_number"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "foreign_nationality_code",
+			"showColumn": "const:sys_011"
+		},{
+			"columnType": "date",
+			"columndescription": "",
+			"columnName": "update_date"
+		}],
+		"autoGenerateId": true,
+		"logicIdColumnSet": [],
+		"idColumnSet": ["auto_id"],
+		"dataSourceName": "",
+		"tableName": "Aml_Foreign_Dignitaries"
+	}]
+}
+

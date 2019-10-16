@@ -1,0 +1,37 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_ModelParam",
+		"autoGenerateId": false,
+		"idColumnSet": ["paramCode"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "参数编号",
+			"columnName": "paramCode"
+		}, {
+			"columnType": "string",
+			"columnDescription": "参数名称",
+			"columnName": "paramName"
+		}, {
+			"columnType": "string",
+			"columnDescription": "描述",
+			"columnName": "paramDes"
+		}, {
+			"columnType": "string",
+			"columnDescription": "参数值",
+			"columnName": "paramValue"
+		}, {
+			"columnType": "string",
+			"columnDescription": "可疑模型",
+			"columnName": "susModelCodes",
+                        "showColumn" : "table:Aml_SusModel.susModelName"
+		}, {
+			"columnType": "string",
+			"columnDescription": "大额模型",
+			"columnName": "largeModelCodes"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": [],
+        "keyNameColumnList": ["paramCode","paramName"],
+        "cacheRule": "table"
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE Aml_Blacklist(id VARCHAR(50) NOT NULL,customer_name VARCHAR(512) NULL,customer_old_name  VARCHAR(512) NULL,customer_type VARCHAR(1) NULL,id_type VARCHAR(32) NULL,id_num VARCHAR(512),finance_type VARCHAR(512),crime_type VARCHAR(512),black_source VARCHAR(512),nationality_code varchar(3),management_address varchar(512),remarks varchar(4000),status varchar(2),back_flag varchar(1),update_date DateTime,PRIMARY KEY (id))", "txtlinesql:aml_blacklist_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='Aml_Blacklist') DROP TABLE Aml_Blacklist;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Blacklist(id VARCHAR(50) NOT NULL,customer_name VARCHAR(512) NULL,customer_old_name  VARCHAR(512) NULL,customer_type VARCHAR(1) NULL,id_type VARCHAR(32) NULL,id_num VARCHAR(512),finance_type VARCHAR(512),crime_type VARCHAR(512),black_source VARCHAR(512),nationality_code varchar(3),management_address varchar(512),remarks varchar(4000),status varchar(2),back_flag varchar(1),update_date DateTime,PRIMARY KEY (id))", "txtlinesql:aml_blacklist_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE if exists Aml_Blacklist;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Blacklist(id VARCHAR(50) NOT NULL,customer_name VARCHAR(512) NULL,customer_old_name  VARCHAR(512) NULL,customer_type VARCHAR(1) NULL,id_type VARCHAR(32) NULL,id_num VARCHAR(512),finance_type VARCHAR(512),crime_type VARCHAR(512),black_source VARCHAR(512),nationality_code varchar(3),management_address varchar(512),remarks varchar(4000),status varchar(2),back_flag varchar(1),update_date Date,PRIMARY KEY (id))"],
+		"dataSourceName": "aml_oracle_vpn",
+		"initSqlList": ["DROP TABLE Aml_Blacklist"]
+	}]
+}

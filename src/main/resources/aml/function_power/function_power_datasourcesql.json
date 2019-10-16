@@ -1,0 +1,19 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_User` (`strUserCode` VARCHAR(45) NOT NULL,`strUserName` VARCHAR(45) NOT NULL,`strPassword` VARCHAR(100) NOT NULL,`strRoleCodes` VARCHAR(2000),`branch_code` VARCHAR(45),`updatePasswordTime` datetime,`createTime` datetime,`lastLoginTime` datetime,`strLockState` varchar(45),`errorCount` varchar(45),PRIMARY KEY (`strUserCode`))ENGINE = InnoDB;","txtlinesql:aml_user_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE if exists `Aml_User`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE `Aml_Role` (`strRoleCode` VARCHAR(45) NOT NULL,`strRoleName` VARCHAR(45) NOT NULL,`strFunctionCodes` VARCHAR(2000),`branch_codes` VARCHAR(2000),PRIMARY KEY (`strRoleCode`))ENGINE = InnoDB;","txtlinesql:aml_role_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE if exists `Aml_Role`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_User (strUserCode VARCHAR(45) NOT NULL,strUserName VARCHAR(45) NOT NULL,strPassword VARCHAR(100) NOT NULL,strRoleCodes VARCHAR(2000),branch_code VARCHAR(45),updatePasswordTime datetime,createTime datetime,lastLoginTime datetime,strLockState varchar(45),errorCount varchar(45),PRIMARY KEY (strUserCode))","txtlinesql:aml_user_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='Aml_User') DROP TABLE Aml_User;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE Aml_Role (strRoleCode VARCHAR(45) NOT NULL,strRoleName VARCHAR(45) NOT NULL,strFunctionCodes VARCHAR(2000),branch_codes VARCHAR(2000),PRIMARY KEY (strRoleCode))","txtlinesql:aml_role_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["if exists(select * from sys.objects where name='Aml_Role') DROP TABLE Aml_Role;"]
+	}]
+}

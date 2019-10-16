@@ -1,0 +1,22 @@
+{
+	"entityDatasourceSqlList": [{
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Account_Image`;"],
+		"updateSqlList": [
+			"create table Aml_Account_Image(auto_id varchar(200),check_status varchar(200),date_id datetime,branch_code varchar(200),customer_no varchar(200),customer_name varchar(512),acct_cata varchar(200),acct_nature_type varchar(200),acct_type varchar(200),acct_code varchar(200),acct_name varchar(512),acct_open_date datetime,bank_card_type varchar(200),bank_card_other_type varchar(128),acct_status varchar(200),account_balance varchar(200),agent_user_name varchar(512),agent_user_crtft_type varchar(200),agent_user_crtft_number varchar(128),agent_user_nationality varchar(200),cover_flag varchar(200),special_type varchar(200),update_date datetime,primary key(auto_id))ENGINE=InnoDB DEFAULT CHARSET=utf8;"
+		]
+	},{
+		"dataSourceName": "aml_oracle",
+		"initSqlList": ["DROP TABLE Aml_Account_Image"],
+		"updateSqlList": [
+			"create table Aml_Account_Image(auto_id varchar2(200),check_status varchar2(200),date_id date,branch_code varchar2(200),customer_no varchar2(200),customer_name varchar2(512),acct_cata varchar2(200),acct_nature_type varchar2(200),acct_type varchar2(200),acct_code varchar2(200),acct_name varchar2(512),acct_open_date date,bank_card_type varchar2(200),bank_card_other_type varchar2(128),acct_status varchar2(200),account_balance varchar2(200),agent_user_name varchar2(512),agent_user_crtft_type varchar2(200),agent_user_crtft_number varchar2(128),agent_user_nationality varchar2(200),cover_flag varchar2(200),special_type varchar2(200),update_date date,primary key(auto_id))"
+		]
+	},{
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Account_Image"],
+		"updateSqlList": [
+			"create table Aml_Account_Image(auto_id varchar(200),check_status varchar(200),date_id datetime,branch_code varchar(200),customer_no varchar(200),customer_name varchar(512),acct_cata varchar(200),acct_nature_type varchar(200),acct_type varchar(200),acct_code varchar(200),acct_name varchar(512),acct_open_date datetime,bank_card_type varchar(200),bank_card_other_type varchar(128),acct_status varchar(200),account_balance varchar(200),agent_user_name varchar(512),agent_user_crtft_type varchar(200),agent_user_crtft_number varchar(128),agent_user_nationality varchar(200),cover_flag varchar(200),special_type varchar(200),update_date datetime,primary key(auto_id))"
+		]
+	}]
+
+}

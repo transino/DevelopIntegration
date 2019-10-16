@@ -1,0 +1,24 @@
+{
+	"entityTableList": [{
+		"tableName": "Aml_Wait_DoUser",
+		"autoGenerateId": false,
+		"idColumnSet": ["strWaitCode"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "待办编号",
+			"columnName": "strWaitCode"
+		}, {
+          "columnType": "string",
+          "columnDescription": "待办名称",
+          "columnName": "strWaitName"
+        }, {
+			"columnType": "string",
+			"columnDescription": "待办用户",
+			"columnName": "strUserCodes",
+            "showColumn" : "table:Aml_User.strUserName"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": [],
+        "keyNameColumnList": ["strWaitCode","strWaitName"]
+	}]
+}

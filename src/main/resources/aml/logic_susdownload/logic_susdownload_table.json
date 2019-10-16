@@ -1,0 +1,46 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_SusDownloadLog",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "主键",
+			"columnName": "auto_id"
+		},{
+			"columnType": "string",
+			"columnDescription": "法人机构编号",
+			"columnName": "pboc_branch_code"
+		}, {
+                        "columnType": "string",
+                        "columnDescription": "报文类型",
+                        "columnName": "report_type"
+                }, {
+			"columnType": "string",
+			"columnDescription": "zip文件路径",
+			"columnName": "report_zpi_path"
+		}, {
+			"columnType": "string",
+			"columnDescription": "xml文件路径",
+			"columnName": "report_xml_paths"
+		}, {
+			"columnType": "string",
+			"columnDescription": "生成人员",
+			"columnName": "strUserCode"
+		}, {
+			"columnType": "date",
+			"columnDescription": "生成时间",
+			"columnName": "downloadDate"
+		}, {
+			"columnType": "string",
+			"columnDescription": "zip文件索引",
+			"columnName": "report_zpi_index"
+		}, {
+			"columnType": "string",
+			"columnDescription": "xml文件索引",
+			"columnName": "report_xml_index"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": []
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["create table Aml_Customer_Beneficiary_Image(auto_id varchar(200),  check_status varchar(200),  date_id datetime,  customer_no varchar(200) ,  customer_name varchar(512) ,  branch_code varchar(200) ,  profit_type varchar(200) ,  profit_name varchar(512) ,  profit_area varchar(200) ,  profit_address varchar(512) ,  profit_crtft_type varchar(200) ,  profit_crtft_no varchar(512) ,  profit_crtft_expire_date datetime,  profit_shares varchar(200) ,  profit_position varchar(128) ,  cover_flag varchar(200) ,  profit_remarks varchar(4000) ,  update_date datetime ,  primary key(auto_id) )ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Customer_Beneficiary_Image`;"]
+	}, {
+		"updateSqlList": ["create table Aml_Customer_Beneficiary_Image(auto_id varchar2(200),  check_status varchar2(200),  date_id date,  customer_no varchar2(200) ,  customer_name varchar2(512) ,  branch_code varchar2(200) ,  profit_type varchar2(200) ,  profit_name varchar2(512) ,  profit_area varchar2(200),  profit_address varchar2(512) ,  profit_crtft_type varchar2(200) ,  profit_crtft_no varchar2(512) ,  profit_crtft_expire_date varchar2(512) ,  profit_shares varchar2(200) ,  profit_position varchar2(128) ,  cover_flag varchar2(200) ,  profit_remarks varchar2(4000) ,  update_date date ,  primary key(auto_id) )"],
+		"dataSourceName": "aml_oracle",
+		"initSqlList": ["DROP TABLE Aml_Customer_Beneficiary_Image"]
+	}, {
+		"updateSqlList": ["create table Aml_Customer_Beneficiary_Image(auto_id varchar(200),  check_status varchar(200),  date_id datetime,  customer_no varchar(200) ,  customer_name varchar(512) ,  branch_code varchar(200) ,  profit_type varchar(200) ,  profit_name varchar(512) ,  profit_area varchar(200) ,  profit_address varchar(512) ,  profit_crtft_type varchar(200) ,  profit_crtft_no varchar(512) ,  profit_crtft_expire_date datetime,  profit_shares varchar(200) ,  profit_position varchar(128) ,  cover_flag varchar(200) ,  profit_remarks varchar(4000) ,  update_date datetime ,  primary key(auto_id) )"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Customer_Beneficiary_Image"]
+	}]
+}

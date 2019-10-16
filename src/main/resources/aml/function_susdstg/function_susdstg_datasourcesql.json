@@ -1,0 +1,52 @@
+{
+	"entityDatasourceSqlList": [{
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Suspcs_Case`;"],
+		"updateSqlList": [
+			"create table Aml_Suspcs_Case(auto_id varchar(45),data_from VARCHAR(45),delete_state VARCHAR(45),audit_type_state VARCHAR(45),show_logic1 VARCHAR(45),show_logic2 VARCHAR(45),show_logic3 VARCHAR(45),show_logic4 VARCHAR(45),show_logic5 VARCHAR(45),show_logic6 VARCHAR(45),show_logic7 VARCHAR(45),show_logic8 VARCHAR(45),report_zpi_name VARCHAR(200),report_xml_name VARCHAR(200),check_state char(1),receipt_state char(1),data_state char(1),produce_state char(1),date_id datetime,suspcs_cdoe varchar(8),suspcs_model_code varchar(8),RICD varchar(14),RPNC varchar(16),RITP varchar(4),DETR varchar(2),TORP varchar(5),ORXN varchar(64),TOSC varchar(2000),STCR varchar(45),ODRP varchar(64),DORP varchar(2),TPTR varchar(2),OTPR varchar(2000),STCB varchar(1000),AOSP varchar(4000),SBDT varchar(8),SEDT varchar(8),ROTF1 varchar(1000),ROTF2 varchar(1000),PRIMARY KEY (`auto_id`))ENGINE=InnoDB DEFAULT CHARSET=utf8;"
+		]
+	},{
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Suspcs_Case_Detail`;"],
+		"updateSqlList": [
+			"create table  Aml_Suspcs_Case_Detail (auto_id varchar(45),data_from VARCHAR(45),delete_state VARCHAR(45),report_zpi_name VARCHAR(200),report_xml_name VARCHAR(200),check_state char(1),audit_opinion varchar(100),audit_state char(1),audit_type_state varchar(45),receipt_state char(1),data_state char(1),produce_state char(1),suspcs_cdoe varchar(8),suspcs_model_code varchar(8),date_id datetime,trans_code varchar(256),trans_date datetime,trans_nationality varchar(3),trans_address varchar(6),branch_code varchar(45),customer_type char(1),customer_no varchar(45),customer_name varchar(512),acct_code varchar(64),trans_amount varchar(200),trans_use varchar(512),currency varchar(3),payment_flag varchar(2),trans_type varchar(6),TOSC varchar(1000),STCR varchar(1000),STCB varchar(1000),AOSP varchar(2000),SEVC varchar(45),SENM varchar(512),SETP varchar(6),OITP varchar(128),SEID varchar(128),STNT varchar(200),SCIT varchar(512),SRNM varchar(512),SRIT varchar(45),ORIT varchar(128),SRID varchar(128),SCNM varchar(512),SCIF varchar(512),OCIT varchar(128),SCID varchar(128),SCBA varchar(64),SCBN varchar(64),other_inst_lattice_name varchar(64),other_inst_lattice_type varchar(2),other_inst_lattice_code varchar(16),other_inst_lattice_area varchar(9),other_customer_name varchar(512),other_customer_crtft_type varchar(6),other_customer_crtft_number varchar(128),other_customer_acct_type varchar(6),other_customer_acct_code varchar(64),agent_user_name varchar(512),agent_user_crtft_type varchar(6),agent_user_crtft_number varchar(128),agent_user_nationality varchar(3),`junior_help_user` varchar(512),`repeat_help_user` varchar(512),`cutout_help_user` varchar(512),reserve_1 varchar(1000),reserve_2 varchar(500),reserve_3 varchar(500),reserve_4 varchar(500),reserve_5 varchar(500),reserve_6 varchar(500),reserve_7 varchar(500),reserve_8 date,reserve_9 date,reserve_10 date,reserve_11 varchar(200),reserve_12 varchar(200),reserve_13 varchar(200),PRIMARY KEY (`auto_id`))ENGINE=InnoDB DEFAULT CHARSET=utf8;"
+		]
+	},{
+      "dataSourceName": "aml_mysql",
+      "initSqlList": ["DROP TABLE `Aml_Suspcs_Comment`;"],
+      "updateSqlList": [
+        "create table Aml_Suspcs_Comment(auto_id varchar(45),detail_id varchar(45),strUserCode VARCHAR(45),commetTime datetime,commetState VARCHAR(45),commet VARCHAR(1000),PRIMARY KEY (`auto_id`))ENGINE=InnoDB DEFAULT CHARSET=utf8;"
+      ]
+    },{
+		"dataSourceName": "aml_oracle",
+		"initSqlList": ["DROP TABLE Aml_Suspcs_Case"],
+		"updateSqlList": [
+			"create table Aml_Suspcs_Case(auto_id varchar2(45),data_from varchar2(45),delete_state varchar2(45),audit_type_state VARCHAR2(45),show_logic1 varchar2(45),show_logic2 varchar2(45),show_logic3 varchar2(45),show_logic4 varchar2(45),show_logic5 varchar2(45),show_logic6 varchar2(45),show_logic7 varchar2(45),show_logic8 varchar2(45),report_zpi_name varchar2(200),report_xml_name varchar2(200),check_state char(1),receipt_state char(1),data_state char(1),produce_state char(1),date_id date,suspcs_cdoe varchar2(8),suspcs_model_code varchar2(8),RICD varchar2(14),RPNC varchar2(16),RITP varchar2(4),DETR varchar2(2),TORP varchar2(5),ORXN varchar2(64),TOSC varchar2(2000),STCR varchar2(45),ODRP varchar2(64),DORP varchar2(2),TPTR varchar2(2),OTPR varchar2(2000),STCB varchar2(1000),AOSP varchar2(4000),SBDT varchar2(8),SEDT varchar2(8),ROTF1 varchar2(1000),ROTF2 varchar2(1000))"
+		]
+	},{
+		"dataSourceName": "aml_oracle",
+		"initSqlList": ["DROP TABLE Aml_Suspcs_Case_Detail"],
+		"updateSqlList": [
+			"create table  Aml_Suspcs_Case_Detail (auto_id varchar2(45),data_from varchar2(45),delete_state varchar2(45),report_zpi_name varchar2(200),report_xml_name varchar2(200),check_state char(1),audit_opinion varchar2(4000),audit_state char(1),audit_type_state varchar(45),receipt_state char(1),data_state char(1),produce_state char(1),suspcs_cdoe varchar2(8),suspcs_model_code varchar2(8),date_id date,trans_code varchar2(256),trans_date date,trans_nationality varchar2(3),trans_address varchar2(6),branch_code varchar2(45),customer_type char(1),customer_no varchar2(45),customer_name varchar2(512),acct_code varchar2(64),trans_amount varchar(200),trans_use varchar2(512),currency varchar2(3),payment_flag varchar2(2),trans_type varchar2(6),TOSC varchar2(2000),STCR varchar2(2000),STCB varchar2(1000),AOSP varchar2(2000),SEVC varchar2(45),SENM varchar2(512),SETP varchar2(6),OITP varchar2(128),SEID varchar2(128),STNT varchar2(2000),SCIT varchar2(512),SRNM varchar2(512),SRIT varchar2(45),ORIT varchar2(128),SRID varchar2(128),SCNM varchar2(512),SCIF varchar2(512),OCIT varchar2(128),SCID varchar2(128),SCBA varchar2(64),SCBN varchar2(64),other_inst_lattice_name varchar2(64),other_inst_lattice_type varchar2(2),other_inst_lattice_code varchar2(16),other_inst_lattice_area varchar2(9),other_customer_name varchar2(512),other_customer_crtft_type varchar2(6),other_customer_crtft_number varchar2(128),other_customer_acct_type varchar2(6),other_customer_acct_code varchar2(64),agent_user_name varchar2(512),agent_user_crtft_type varchar2(6),agent_user_crtft_number varchar2(128),agent_user_nationality varchar2(3)junior_help_user varchar2(512),repeat_help_user varchar2(512),cutout_help_user varchar2(512),reserve_1 varchar2(2000),reserve_2 varchar2(2000),reserve_3 varchar2(2000),reserve_4 varchar2(2000),reserve_5 varchar2(2000),reserve_6 varchar2(2000),reserve_7 varchar2(2000),reserve_8 date,reserve_9 date,reserve_10 date,reserve_11 varchar(200),reserve_12 varchar(200),reserve_13 varchar(200),PRIMARY KEY (auto_id))"
+		]
+	},{
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Suspcs_Case;"],
+		"updateSqlList": [
+			"create table Aml_Suspcs_Case(auto_id varchar(45),data_from VARCHAR(45),delete_state VARCHAR(45),audit_type_state VARCHAR(45),show_logic1 VARCHAR(45),show_logic2 VARCHAR(45),show_logic3 VARCHAR(45),show_logic4 VARCHAR(45),show_logic5 VARCHAR(45),show_logic6 VARCHAR(45),show_logic7 VARCHAR(45),show_logic8 VARCHAR(45),report_zpi_name VARCHAR(200),report_xml_name VARCHAR(200),check_state char(1),receipt_state char(1),data_state char(1),produce_state char(1),date_id datetime,suspcs_cdoe varchar(8),suspcs_model_code varchar(8),RICD varchar(14),RPNC varchar(16),RITP varchar(4),DETR varchar(2),TORP varchar(5),ORXN varchar(64),TOSC varchar(2000),STCR varchar(45),ODRP varchar(64),DORP varchar(2),TPTR varchar(2),OTPR varchar(2000),STCB varchar(1000),AOSP varchar(4000),SBDT varchar(8),SEDT varchar(8),ROTF1 varchar(1000),ROTF2 varchar(1000),PRIMARY KEY (auto_id));"
+		]
+	},{
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Suspcs_Case_Detail;"],
+		"updateSqlList": [
+			"create table  Aml_Suspcs_Case_Detail (auto_id varchar(45),data_from VARCHAR(45),delete_state VARCHAR(45),report_zpi_name VARCHAR(200),report_xml_name VARCHAR(200),check_state char(1),audit_opinion varchar(4000),audit_state char(1),audit_type_state varchar(45),receipt_state char(1),data_state char(1),produce_state char(1),suspcs_cdoe varchar(8),suspcs_model_code varchar(8),date_id datetime,trans_code varchar(256),trans_date datetime,trans_nationality varchar(3),trans_address varchar(6),branch_code varchar(45),customer_type char(1),customer_no varchar(45),customer_name varchar(512),acct_code varchar(64),trans_amount varchar(200),trans_use varchar(512),currency varchar(3),payment_flag varchar(2),trans_type varchar(6),TOSC varchar(2000),STCR varchar(2000),STCB varchar(1000),AOSP varchar(2000),SEVC varchar(45),SENM varchar(512),SETP varchar(6),OITP varchar(128),SEID varchar(128),STNT varchar(2000),SCIT varchar(512),SRNM varchar(512),SRIT varchar(45),ORIT varchar(128),SRID varchar(128),SCNM varchar(512),SCIF varchar(512),OCIT varchar(128),SCID varchar(128),SCBA varchar(64),SCBN varchar(64),other_inst_lattice_name varchar(64),other_inst_lattice_type varchar(2),other_inst_lattice_code varchar(16),other_inst_lattice_area varchar(9),other_customer_name varchar(512),other_customer_crtft_type varchar(6),other_customer_crtft_number varchar(128),other_customer_acct_type varchar(6),other_customer_acct_code varchar(64),agent_user_name varchar(512),agent_user_crtft_type varchar(6),agent_user_crtft_number varchar(128),agent_user_nationality varchar(3),junior_help_user varchar(512),repeat_help_user varchar(512),cutout_help_user varchar(512),reserve_1 varchar(2000),reserve_2 varchar(2000),reserve_3 varchar(2000),reserve_4 varchar(2000),reserve_5 varchar(2000),reserve_6 varchar(2000),reserve_7 varchar(2000),reserve_8 date,reserve_9 date,reserve_10 date,reserve_11 varchar(200),reserve_12 varchar(200),reserve_13 varchar(200),PRIMARY KEY (auto_id));"
+		]
+	},{
+      "dataSourceName": "aml_sqlserver",
+      "initSqlList": ["DROP TABLE Aml_Suspcs_Comment;"],
+      "updateSqlList": [
+        "create table Aml_Suspcs_Comment(auto_id varchar(45),detail_id varchar(45),strUserCode VARCHAR(45),commetTime datetime,commetState VARCHAR(45),commet VARCHAR(1000),PRIMARY KEY (auto_id));"
+      ]
+    }]
+
+}

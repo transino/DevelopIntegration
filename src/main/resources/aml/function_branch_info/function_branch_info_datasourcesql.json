@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_Branch_Info` (`pboc_branch_code` VARCHAR(45) NOT NULL,`pboc_branch_name` VARCHAR(200) NOT NULL,`branch_codes` VARCHAR(2000),`industry_type` VARCHAR(200),`unid_social_code` VARCHAR(200),`regs_nationality` VARCHAR(200),`regs_date` datetime,`regs_address_area` VARCHAR(200),`business_scope` VARCHAR(2000),`legal_name` VARCHAR(2000),`legal_crtft_type` VARCHAR(200),`legal_crtft_number` VARCHAR(2000),reserve_1 varchar(2000),PRIMARY KEY (`pboc_branch_code`))ENGINE = InnoDB;", "txtlinesql:aml_branch_info_linesql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Branch_Info`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Branch_Info (pboc_branch_code VARCHAR(45) NOT NULL,pboc_branch_name VARCHAR(200) NOT NULL,branch_codes VARCHAR(2000),industry_type VARCHAR(200),unid_social_code VARCHAR(200),regs_nationality VARCHAR(200),regs_date datetime,regs_address_area VARCHAR(200),business_scope VARCHAR(2000),legal_name VARCHAR(2000),legal_crtft_type VARCHAR(200),legal_crtft_number VARCHAR(2000),reserve_1 varchar(2000),PRIMARY KEY (pboc_branch_code))", "txtlinesql:aml_branch_info_linesql.sql"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Branch_Info;"]
+	}]
+}

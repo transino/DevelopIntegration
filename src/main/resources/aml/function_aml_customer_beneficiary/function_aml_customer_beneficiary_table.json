@@ -1,0 +1,152 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_Customer_Beneficiary",
+		"autoGenerateId": true,
+		"idColumnSet": ["auto_id"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "主键（自生成）",
+			"columnName": "auto_id"
+		}, {
+			"columnType": "string",
+			"columnDescription": "校验状态",
+			"columnName": "check_status"
+		}, {
+			"columnType": "date",
+			"columnDescription": "数据日期",
+			"columnName": "date_id"
+		}, {
+			"columnType": "string",
+			"columnDescription": "客户编号",
+			"columnName": "customer_no"
+		}, {
+			"columnType": "string",
+			"columnDescription": "客户名称",
+			"columnName": "customer_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "所属机构编码",
+			"columnName": "branch_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益人类型",
+			"columnName": "profit_type",
+			"showColumn": "const:sys_012"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益所有人姓名",
+			"columnName": "profit_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益所有人行政区划",
+			"columnName": "profit_area",
+			"showColumn": "const:sys_005"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益所有人地址",
+			"columnName": "profit_address"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益所有人证件类型",
+			"columnName": "profit_crtft_type",
+			"showColumn": "const:sys_003"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益所有人证件号码",
+			"columnName": "profit_crtft_no"
+		}, {
+			"columnType": "date",
+			"columnDescription": "受益所有人证件到期日期",
+			"columnName": "profit_crtft_expire_date"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益所有人持股比例",
+			"columnName": "profit_shares"
+		}, {
+			"columnType": "string",
+			"columnDescription": "受益所有人所在公司职称",
+			"columnName": "profit_position"
+		}, {
+			"columnType": "string",
+			"columnDescription": "跑批是否覆盖",
+			"columnName": "cover_flag",
+			"showColumn": "const:sys_031"
+		}, {
+			"columnType": "string",
+			"columnDescription": "备注（因何原因被列为受益人）",
+			"columnName": "profit_remarks"
+		}, {
+			"columnType": "date",
+			"columnDescription": "更新日期",
+			"columnName": "update_date"
+		},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段1",
+				"columnName": "reserve_1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段2",
+				"columnName": "reserve_2"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段3",
+				"columnName": "reserve_3"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段4",
+				"columnName": "reserve_4"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段5",
+				"columnName": "reserve_5"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段6",
+				"columnName": "reserve_6"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段7",
+				"columnName": "reserve_7"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段8",
+				"columnName": "reserve_8"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段9",
+				"columnName": "reserve_9"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段10",
+				"columnName": "reserve_10"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段11",
+				"columnName": "reserve_11"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段12",
+				"columnName": "reserve_12"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段13",
+				"columnName": "reserve_13"
+			}],
+		"dataSourceName": "",
+                "logicIdColumnSet": ["customer_no", "profit_crtft_type", "profit_crtft_no"],
+		"keyNameColumnList": ["customer_no", "customer_name","profit_name", "date_id"]
+	}]
+}

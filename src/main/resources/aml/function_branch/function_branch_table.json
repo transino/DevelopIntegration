@@ -1,0 +1,28 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_Branch",
+		"autoGenerateId": false,
+		"idColumnSet": ["branch_code"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "组织机构编号",
+			"columnName": "branch_code"
+		}, {
+			"columnType": "string",
+			"columnDescription": "组织机构名称",
+			"columnName": "branch_name"
+		}, {
+			"columnType": "string",
+			"columnDescription": "联系电话",
+			"columnName": "branch_phone"
+		}, {
+			"columnType": "string",
+			"columnDescription": "详细地址",
+			"columnName": "branch_address"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": ["branch_name"],
+		"keyNameColumnList": ["branch_code", "branch_name"],
+		"cacheRule": "table"
+	}]
+}

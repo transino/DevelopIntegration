@@ -1,0 +1,39 @@
+{
+	"entityDatasourceList": [{
+		"userName": "root",
+		"driverClassName": "com.mysql.jdbc.Driver",
+		"defaultDatasource": true,
+		"strDatabaseType": "mysql",
+		"dataSourceName": "aml_mysql",
+		"password": "root",
+		"initSqlList": ["CREATE TABLE  `Cooperation_DatasourceSql` (`strSqlId` varchar(200) NOT NULL,  `strSql` varchar(2000) NOT NULL,`dtCreateTime` DATETIME NOT NULL,`strState` varchar(45) NOT NULL,`strProjectDescription` varchar(2000) DEFAULT NULL,PRIMARY KEY (`strSqlId`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+		"url": "jdbc:mysql://localhost:3306/aml?characterEncoding=UTF-8"
+	},{
+		"userName": "sa",
+		"driverClassName": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+		"defaultDatasource": false,
+		"strDatabaseType": "sqlserver",
+		"dataSourceName": "aml_sqlserver",
+		"password": "Transino@123",
+		"initSqlList": ["CREATE TABLE  Cooperation_DatasourceSql(strSqlId varchar(200) NOT NULL,  strSql varchar(2000) NOT NULL,dtCreateTime DATETIME NOT NULL,strState varchar(45) NOT NULL,strProjectDescription varchar(2000) DEFAULT NULL,PRIMARY KEY (strSqlId))"],
+		"url": "jdbc:sqlserver://192.168.1.107:1433;databaseName=aml"
+	},{
+		"userName": "atomsa_aml",
+		"driverClassName": "oracle.jdbc.driver.OracleDriver",
+		"defaultDatasource": false,
+		"strDatabaseType": "oracle",
+		"dataSourceName": "aml_oracle",
+		"password": "atomsa_aml",
+		"initSqlList": ["CREATE TABLE  Cooperation_DatasourceSql(strSqlId varchar2(200) NOT NULL,  strSql varchar2(2000) NOT NULL,dtCreateTime DATETIME NOT NULL,strState varchar2(45) NOT NULL,strProjectDescription varchar2(2000) DEFAULT NULL,PRIMARY KEY (strSqlId))"],
+		"url": "jdbc:oracle:thin:atomsa_aml/atomsa_aml@10.0.131.31:1521:sefccore"
+	},{
+      "userName": "aml",
+      "driverClassName": "com.mysql.jdbc.Driver",
+      "defaultDatasource": false,
+      "strDatabaseType": "mysql",
+      "dataSourceName": "aml_mysql_transino",
+      "password": "Transino@123",
+      "initSqlList": ["CREATE TABLE  `Cooperation_DatasourceSql` (`strSqlId` varchar(50) NOT NULL,  `strSql` varchar(4000) NOT NULL,`dtCreateTime` DATETIME NOT NULL,`strState` varchar(45) NOT NULL,`strProjectDescription` varchar(2000) DEFAULT NULL,PRIMARY KEY (`strSqlId`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;"],
+      "url": "jdbc:mysql://192.168.1.107:3306/aml_test?characterEncoding=UTF-8"
+    }]
+}

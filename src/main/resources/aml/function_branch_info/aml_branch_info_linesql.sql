@@ -1,0 +1,2 @@
+﻿delete from aml_branch_info where pboc_branch_code = 'C5008131000000';
+INSERT INTO aml_branch_info VALUES('C5008131000000','反洗钱法人机构','C500813100000001','J003','000000000000000000','CHN','2019-03-01 00:00:00','@N','@N','@N','@N','@N','');

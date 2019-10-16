@@ -1,0 +1,356 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_Transaction",
+		"autoGenerateId": false,
+		"idColumnSet": ["trans_code"],
+		"entityColumnList": [{
+				"columnType": "string",
+				"columnDescription": "校验状态",
+				"columnName": "check_status"
+			},{
+				"columnType": "string",
+				"columnDescription": "交易信息备注1",
+				"columnName": "trans_remarks1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易信息备注2",
+				"columnName": "trans_remarks2"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "数据日期",
+				"columnName": "date_id"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易流水编号",
+				"columnName": "trans_code"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "交易发生日期",
+				"columnName": "trans_date"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户编码",
+				"columnName": "customer_no"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户名称",
+				"columnName": "customer_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "客户类型",
+				"columnName": "customer_type",
+				"showColumn": "const:sys_036"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "帐户分类",
+				"columnName": "acct_cata",
+				"showColumn": "const:sys_034"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "帐户属性",
+				"columnName": "acct_nature_type",
+				"showColumn": "const:sys_035"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易账号",
+				"columnName": "acct_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易账户名称",
+				"columnName": "acct_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "所在银行账户账号",
+				"columnName": "bank_card_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "所在银行账户名称",
+				"columnName": "bank_card_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易所属机构代码",
+				"columnName": "branch_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易金融机构网点代码",
+				"columnName": "bank_inst_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易方式",
+				"columnName": "trans_type",
+				"showColumn": "const:sys_023"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易金额",
+				"columnName": "trans_amount"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易币种",
+				"columnName": "currency",
+				"showColumn": "const:sys_006"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易金额（折人民币）",
+				"columnName": "trans_amount_cny"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易金额（折美元）",
+				"columnName": "trans_amount_usd"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "资金收付标志",
+				"columnName": "payment_flag",
+				"showColumn": "const:sys_024"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易发生地(国籍)",
+				"columnName": "trans_nationality",
+				"showColumn": "const:sys_011"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易发生地(地区代码)",
+				"columnName": "trans_address",
+				"showColumn": "const:sys_005"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手IP",
+				"columnName": "trans_address_ip"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "资金用途",
+				"columnName": "trans_use"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "银行与支付机构之间的业务交易编码",
+				"columnName": "bank_trans_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "涉外收支交易分类与代码",
+				"columnName": "foreign_related_code",
+				"showColumn": "const:sys_026"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "金融机构与客户的关系",
+				"columnName": "customer_org_relationship",
+				"showColumn": "const:sys_027"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易代办人姓名",
+				"columnName": "agent_user_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易代办人身份证件/证明文件类型",
+				"columnName": "agent_user_crtft_type",
+				"showColumn": "const:sys_003"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易代办人身份证件/证明文件号码",
+				"columnName": "agent_user_crtft_number"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易代办人国籍",
+				"columnName": "agent_user_nationality",
+				"showColumn": "const:sys_011"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "收付款方匹配号类型",
+				"columnName": "payment_marry_type"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "收付款方匹配号",
+				"columnName": "payment_marry_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "非柜台交易方式",
+				"columnName": "no_bar_trans_type",
+				"showColumn": "const:sys_029"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "其他非柜台交易方式",
+				"columnName": "no_bar_other_trans_type"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "非柜台交易方式的设备代码",
+				"columnName": "no_bar_trans_device_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "对方金融机构网点名称",
+				"columnName": "other_inst_lattice_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "对方金融机构网点代码类型",
+				"columnName": "other_inst_lattice_type",
+				"showColumn": "const:sys_041"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "对方金融机构网点代码",
+				"columnName": "other_inst_lattice_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "对方金融机构网点行政区划代码",
+				"columnName": "other_inst_lattice_area",
+				"showColumn": "const:sys_005"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手姓名/名称",
+				"columnName": "other_customer_name"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手身份证件/证明文件类型",
+				"columnName": "other_customer_crtft_type",
+				"showColumn": "const:sys_003"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手身份证件/证明文件号码",
+				"columnName": "other_customer_crtft_number"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手账户类型",
+				"columnName": "other_customer_acct_type",
+				"showColumn": "const:sys_022"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手账号",
+				"columnName": "other_customer_acct_code"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手国籍",
+				"columnName": "other_customer_nationality",
+				"showColumn": "const:sys_011"
+			},
+
+			{
+				"columnType": "string",
+				"columnDescription": "交易对手地区代码",
+				"columnName": "other_customer_area",
+				"showColumn": "const:sys_005"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "大额流水加载标识",
+				"columnName": "large_flag"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "可疑流水加载标识",
+				"columnName": "suspcs_flag"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段1",
+				"columnName": "reserve_1"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段2",
+				"columnName": "reserve_2"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段3",
+				"columnName": "reserve_3"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段4",
+				"columnName": "reserve_4"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段5",
+				"columnName": "reserve_5"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段6",
+				"columnName": "reserve_6"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段7",
+				"columnName": "reserve_7"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段8",
+				"columnName": "reserve_8"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段9",
+				"columnName": "reserve_9"
+			},
+			{
+				"columnType": "date",
+				"columnDescription": "备用字段10",
+				"columnName": "reserve_10"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段11",
+				"columnName": "reserve_11"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段12",
+				"columnName": "reserve_12"
+			},
+			{
+				"columnType": "string",
+				"columnDescription": "备用字段13",
+				"columnName": "reserve_13"
+			}
+
+		],
+		"dataSourceName": "",
+		"keyNameColumnList": ["trans_code"],
+		"logicIdColumnSet": []
+	}]
+}

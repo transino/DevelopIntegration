@@ -1,0 +1,19 @@
+{
+  "entityDatasourceSqlList": [{
+    "updateSqlList": ["CREATE TABLE `Aml_Const` (`constNum` VARCHAR(45) NOT NULL,`constName` VARCHAR(200) NOT NULL,PRIMARY KEY (`constNum`))ENGINE = InnoDB;", "txtlinesql:aml_const_linesql.sql"],
+    "dataSourceName": "aml_mysql",
+    "initSqlList": ["DROP TABLE `Aml_Const`;"]
+  }, {
+    "updateSqlList": ["CREATE TABLE `Aml_Const_Detail` (`auto_id` VARCHAR(45) NOT NULL, `constDetailNum` VARCHAR(45) NOT NULL,`constDetailName` VARCHAR(200) NOT NULL,`constNum` VARCHAR(45) NOT NULL,`constDesc` VARCHAR(2000) NOT NULL,PRIMARY KEY (`auto_id`))ENGINE = InnoDB;", "txtlinesql:aml_const_detail_linesql.sql"],
+    "dataSourceName": "aml_mysql",
+    "initSqlList": ["DROP TABLE `Aml_Const_Detail`;"]
+  },{
+    "updateSqlList": ["CREATE TABLE Aml_Const (constNum VARCHAR(45) NOT NULL,constName VARCHAR(200) NOT NULL,PRIMARY KEY (constNum))", "txtlinesql:aml_const_linesql.sql"],
+    "dataSourceName": "aml_sqlserver",
+    "initSqlList": ["DROP TABLE Aml_Const;"]
+  }, {
+    "updateSqlList": ["CREATE TABLE Aml_Const_Detail (auto_id VARCHAR(45) NOT NULL, constDetailNum VARCHAR(45) NOT NULL,constDetailName VARCHAR(200) NOT NULL,constNum VARCHAR(45) NOT NULL,constDesc VARCHAR(2000) NOT NULL,PRIMARY KEY (auto_id))", "txtlinesql:aml_const_detail_linesql.sql"],
+    "dataSourceName": "aml_sqlserver",
+    "initSqlList": ["DROP TABLE Aml_Const_Detail;"]
+  }]
+}

@@ -1,0 +1,19 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Cooperation_TaskSubmit` (`autoId` VARCHAR(45) NOT NULL,`strProjectCode` VARCHAR(45) NOT NULL,`strTaskCode` VARCHAR(45) NOT NULL,`strUserCode` VARCHAR(45) NOT NULL,`dtSubmitTime` DATETIME NOT NULL,`strSubmitDescription` VARCHAR(2000),`latest` VARCHAR(45) NOT NULL,`strSubmitFiles` VARCHAR(20000),PRIMARY KEY (`autoId`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation",
+		"initSqlList": ["DROP TABLE `Cooperation_TaskSubmit`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE `Cooperation_TaskSubmit` (`autoId` VARCHAR(45) NOT NULL,`strProjectCode` VARCHAR(45) NOT NULL,`strTaskCode` VARCHAR(45) NOT NULL,`strUserCode` VARCHAR(45) NOT NULL,`dtSubmitTime` DATETIME NOT NULL,`strSubmitDescription` VARCHAR(2000),`latest` VARCHAR(45) NOT NULL,`strSubmitFiles` VARCHAR(20000),PRIMARY KEY (`autoId`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation3",
+		"initSqlList": ["DROP TABLE `Cooperation_TaskSubmit`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE `Cooperation_TaskSubmit` (`autoId` VARCHAR(45) NOT NULL,`strProjectCode` VARCHAR(45) NOT NULL,`strTaskCode` VARCHAR(45) NOT NULL,`strUserCode` VARCHAR(45) NOT NULL,`dtSubmitTime` DATETIME NOT NULL,`strSubmitDescription` VARCHAR(2000),`latest` VARCHAR(45) NOT NULL,`strSubmitFiles` VARCHAR(20000),PRIMARY KEY (`autoId`))ENGINE = InnoDB;"],
+		"dataSourceName": "cooperation_aml",
+		"initSqlList": ["DROP TABLE `Cooperation_TaskSubmit`;"]
+	}, {
+		"updateSqlList": ["CREATE TABLE Cooperation_TaskSubmit (autoId VARCHAR2(45) NOT NULL,strProjectCode VARCHAR2(45) NOT NULL,strTaskCode VARCHAR2(45) NOT NULL,strUserCode VARCHAR2(45) NOT NULL,dtSubmitTime date NOT NULL,strSubmitDescription VARCHAR2(2000),latest varchar2(10) NOT NULL,strSubmitFiles VARCHAR2(4000),PRIMARY KEY (autoId))"],
+		"dataSourceName": "cooperation_oracle",
+		"initSqlList": ["DROP TABLE Cooperation_TaskSubmit"]
+	}]
+}

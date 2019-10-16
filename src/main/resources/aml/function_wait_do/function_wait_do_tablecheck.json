@@ -1,0 +1,19 @@
+{
+	"checkRuleTableList": [{
+		"columnDescriptionMap": {},
+		"columnTypeMap": {},
+		"checkRuleList": [{
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(strWaitCode),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}],
+		"tableName": "Aml_Wait_DoUser",
+		"dataSourceName": "",
+		"checkRuleTableMap": {}
+	}]
+}

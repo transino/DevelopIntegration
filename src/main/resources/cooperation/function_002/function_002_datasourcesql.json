@@ -1,0 +1,19 @@
+{
+	"entityDatasourceSqlList": [{
+		"initSqlList": ["DROP TABLE `Cooperation_User`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_User` (`strUserCode` VARCHAR(45) NOT NULL,`strUserName` VARCHAR(45) NOT NULL,`strPassword` VARCHAR(45) NOT NULL,`strRoleTypes` VARCHAR(200),PRIMARY KEY (`strUserCode`))ENGINE = InnoDB;", "INSERT INTO Cooperation_User VALUES('admin','admin','admin','0,1,2,3');"],
+		"dataSourceName": "cooperation"
+	},{
+		"initSqlList": ["DROP TABLE `Cooperation_User`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_User` (`strUserCode` VARCHAR(45) NOT NULL,`strUserName` VARCHAR(45) NOT NULL,`strPassword` VARCHAR(45) NOT NULL,`strRoleTypes` VARCHAR(200),PRIMARY KEY (`strUserCode`))ENGINE = InnoDB;", "INSERT INTO Cooperation_User VALUES('admin','admin','admin','0,1,2,3');"],
+		"dataSourceName": "cooperation3"
+	},{
+		"initSqlList": ["DROP TABLE `Cooperation_User`;"],
+		"updateSqlList": ["CREATE TABLE `Cooperation_User` (`strUserCode` VARCHAR(45) NOT NULL,`strUserName` VARCHAR(45) NOT NULL,`strPassword` VARCHAR(45) NOT NULL,`strRoleTypes` VARCHAR(200),PRIMARY KEY (`strUserCode`))ENGINE = InnoDB;", "INSERT INTO Cooperation_User VALUES('admin','admin','admin','0,1,2,3');"],
+		"dataSourceName": "cooperation_aml"
+	}, {
+		"initSqlList": ["DROP TABLE Cooperation_User"],
+		"updateSqlList": ["CREATE TABLE Cooperation_User (strUserCode VARCHAR2(45) NOT NULL,strUserName VARCHAR2(45) NOT NULL,strPassword VARCHAR2(45) NOT NULL,strRoleTypes VARCHAR2(200),PRIMARY KEY (strUserCode))", "INSERT INTO Cooperation_User VALUES('admin','admin','admin','0,1,2,3')"],
+		"dataSourceName": "cooperation_oracle"
+	}]
+}

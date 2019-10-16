@@ -1,0 +1,50 @@
+{
+  "entityTableList": [{
+    "tableName": "Aml_Const",
+    "autoGenerateId": false,
+    "idColumnSet": ["constNum"],
+    "entityColumnList": [{
+      "columnType": "string",
+      "columnDescription": "类别编码",
+      "columnName": "constNum"
+    }, {
+      "columnType": "string",
+      "columnDescription": "类别名称",
+      "columnName": "constName"
+    }],
+    "dataSourceName": "",
+    "logicIdColumnSet": [],
+    "keyNameColumnList": ["constNum","constName"],
+    "cacheRule": "table"
+  }, {
+    "tableName": "Aml_Const_Detail",
+    "autoGenerateId": true,
+    "idColumnSet": ["auto_id"],
+    "entityColumnList": [{
+      "columnType": "string",
+      "columnDescription": "主键",
+      "columnName": "auto_id"
+    }, {
+      "columnType": "string",
+      "columnDescription": "明细编码",
+      "columnName": "constDetailNum"
+    }, {
+      "columnType": "string",
+      "columnDescription": "明细名称",
+      "columnName": "constDetailName"
+    }, {
+      "columnType": "string",
+      "columnDescription": "类别编码",
+      "columnName": "constNum",
+      "showColumn" : "table:Aml_Const.constName"
+    }, {
+      "columnType": "string",
+      "columnDescription": "描述",
+      "columnName": "constDesc"
+    }],
+    "dataSourceName": "",
+    "logicIdColumnSet": ["constNum", "constDetailNum"],
+    "keyNameColumnList": ["constNum","constDetailNum","constDetailName"],
+    "cacheRule": "const:constNum,constDetailNum,constDetailName"
+  }]
+}

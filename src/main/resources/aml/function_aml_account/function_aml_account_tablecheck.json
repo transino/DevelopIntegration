@@ -1,0 +1,199 @@
+{
+	"checkRuleTableList": [{
+		"checkRuleList": [
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(date_id),emptyCheck)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(branch_code),emptyCheck|lengthCheck~1~32)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(customer_no),emptyCheck|lengthCheck~1~32)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(customer_name),emptyCheck|lengthCheck~1~512)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(acct_cata),emptyCheck|amlConstCheck~sys_034)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(acct_nature_type),emptyCheck|amlConstCheck~sys_035)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "当账户分类为对私时，账户属性不能为组织账户",
+				"rule": "@CHECK(@COLUMN(acct_nature_type),compareCheck~!=~2,ifCompareCondition~@COLUMN(acct_cata)~=~1)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "当账户分类为对公时，账户属性不能为个人账户",
+				"rule": "@CHECK(@COLUMN(acct_nature_type),compareCheck~!=~1,ifCompareCondition~@COLUMN(acct_cata)~=~2)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(acct_type),emptyCheck|amlConstCheck~sys_022)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(acct_code),emptyCheck|lengthCheck~1~64)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(acct_name),emptyCheck|lengthCheck~1~512)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(acct_open_date),emptyCheck)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(bank_card_type),emptyCheck|lengthCheck~0~2)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(bank_card_other_type),lengthCheck~0~128)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(acct_status),emptyCheck|amlConstCheck~sys_015)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(account_balance),emptyCheck|lengthCheck~0~20|decimalCheck)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(cover_flag),emptyCheck|amlConstCheck~sys_031)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(update_date),emptyCheck)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			},
+			{
+				"index": 0,
+				"level": 0,
+				"description": "",
+				"rule": "@CHECK(@COLUMN(special_type),emptyCheck|amlConstCheck~sys_063)",
+				"optional": false,
+				"match": "",
+				"descriptionColumnMap": null,
+				"ruleColumnMap": null
+			}
+
+		],
+		"tableName": "Aml_Account",
+		"dataSourceName": ""
+	}]
+}

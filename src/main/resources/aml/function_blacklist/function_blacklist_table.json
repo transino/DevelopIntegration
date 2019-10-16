@@ -1,0 +1,145 @@
+﻿{
+	"entityTableList": [ {
+		"entityColumnList": [{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "customer_name"
+		}, {
+			"columnType": "string",
+			"columndescription": "客户曾用名",
+			"columnName": "customer_old_name"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "customer_type",
+			"showColumn": "const:sys_036"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id_type",
+			"showColumn": "const:sys_003"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id_num"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "finance_type"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "crime_type"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "black_source"
+		},{
+			"columnType": "string",
+			"columndescription": "国籍",
+			"columnName": "nationality_code"
+		},{
+			"columnType": "string",
+			"columndescription": "详细地址",
+			"columnName": "management_address"
+		},{
+			"columnType": "string",
+			"columndescription": "备注",
+			"columnName": "remarks"
+		},{
+			"columnType": "string",
+			"columndescription": "黑名单回溯标识",
+			"columnName": "back_flag",
+			"showColumn": "const:sys_031"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "status",
+			"showColumn": "const:sys_043"
+		},{
+			"columnType": "date",
+			"columndescription": "",
+			"columnName": "update_date"
+		}],
+		"autoGenerateId": true,
+		"logicIdColumnSet": [],
+		"idColumnSet": ["id"],
+		"dataSourceName": "aml_sqlserver",
+		"tableName": "Aml_Blacklist"
+	},{
+		"entityColumnList": [{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "customer_name"
+		}, {
+			"columnType": "string",
+			"columndescription": "客户曾用名",
+			"columnName": "customer_old_name"
+		}, {
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "customer_type",
+			"showColumn": "const:sys_036"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id_type",
+			"showColumn": "const:sys_003"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "id_num"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "finance_type"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "crime_type"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "black_source"
+		},{
+			"columnType": "string",
+			"columndescription": "国籍",
+			"columnName": "nationality_code"
+		},{
+			"columnType": "string",
+			"columndescription": "详细地址",
+			"columnName": "management_address"
+		},{
+			"columnType": "string",
+			"columndescription": "备注",
+			"columnName": "remarks"
+		},{
+			"columnType": "string",
+			"columndescription": "黑名单回溯标识",
+			"columnName": "back_flag"
+		},{
+			"columnType": "string",
+			"columndescription": "",
+			"columnName": "status",
+			"showColumn": "const:sys_043"
+		},{
+			"columnType": "date",
+			"columndescription": "",
+			"columnName": "update_date"
+		}],
+		"autoGenerateId": true,
+		"logicIdColumnSet": [],
+		"idColumnSet": ["id"],
+		"keyNameColumnList": ["id"],
+		"dataSourceName": "aml_mysql",
+		"tableName": "Aml_Blacklist"
+	}]
+}

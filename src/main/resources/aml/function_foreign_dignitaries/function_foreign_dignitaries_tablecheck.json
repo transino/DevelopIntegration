@@ -1,0 +1,55 @@
+{
+	"checkRuleTableList": [{
+		"columnDescriptionMap": {},
+		"columnTypeMap": {},
+		"checkRuleList": [{
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(dign_user_name),emptyCheck|lengthCheck~1~512)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(dign_user_title),emptyCheck|lengthCheck~1~512)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(dign_user_crtft_type),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(dign_user_crtft_number),emptyCheck|lengthCheck~1~128)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(foreign_nationality_code),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}],
+		"tableName": "Aml_Foreign_Dignitaries",
+		"dataSourceName": "",
+		"checkRuleTableMap": {}
+	}]
+}

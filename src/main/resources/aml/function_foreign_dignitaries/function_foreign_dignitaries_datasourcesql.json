@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_Foreign_Dignitaries` (`auto_id` VARCHAR(32) NOT NULL,`dign_user_name` VARCHAR(512) NOT NULL,`dign_user_title` VARCHAR(512) NOT NULL,`dign_user_crtft_type` VARCHAR(12) NOT NULL,`dign_user_crtft_number` VARCHAR(512),`foreign_nationality_code` VARCHAR(6),`update_date` DateTime,PRIMARY KEY (`auto_id`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Foreign_Dignitaries`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Foreign_Dignitaries (auto_id VARCHAR(32) NOT NULL,dign_user_name VARCHAR(512) NOT NULL,dign_user_title VARCHAR(512) NOT NULL,dign_user_crtft_type VARCHAR(12) NOT NULL,dign_user_crtft_number VARCHAR(512),foreign_nationality_code VARCHAR(6),update_date DateTime,PRIMARY KEY (auto_id));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Foreign_Dignitaries;"]
+	}]
+}

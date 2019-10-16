@@ -1,0 +1,80 @@
+﻿{
+	"entityTableList": [{
+		"tableName": "Aml_User",
+		"autoGenerateId": false,
+		"idColumnSet": ["strUserCode"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "用户编号",
+			"columnName": "strUserCode"
+		}, {
+			"columnType": "string",
+			"columnDescription": "用户名称",
+			"columnName": "strUserName"
+		}, {
+			"columnType": "string",
+			"columnDescription": "密码",
+			"columnName": "strPassword"
+		}, {
+			"columnType": "string",
+			"columnDescription": "所属角色",
+			"columnName": "strRoleCodes",
+                        "showColumn" : "table:Aml_Role.strRoleName"
+		}, {
+			"columnType": "string",
+			"columnDescription": "所属机构",
+			"columnName": "branch_code",
+                        "showColumn" : "table:Aml_Branch.branch_name"
+		}, {
+			"columnType": "date",
+			"columnDescription": "更新密码时间",
+			"columnName": "updatePasswordTime"
+		}, {
+			"columnType": "date",
+			"columnDescription": "创建时间",
+			"columnName": "createTime"
+		}, {
+			"columnType": "date",
+			"columnDescription": "最后登录时间",
+			"columnName": "lastLoginTime"
+		}, {
+			"columnType": "string",
+			"columnDescription": "锁定状态",
+			"columnName": "strLockState"
+		}, {
+			"columnType": "string",
+			"columnDescription": "密码错误次数",
+			"columnName": "errorCount"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": ["strUserName"],
+                "keyNameColumnList": ["strUserCode","strUserName"],
+                "cacheRule": "table"
+	        }, {
+		"tableName": "Aml_Role",
+		"autoGenerateId": false,
+		"idColumnSet": ["strRoleCode"],
+		"entityColumnList": [{
+			"columnType": "string",
+			"columnDescription": "角色编号",
+			"columnName": "strRoleCode"
+		}, {
+			"columnType": "string",
+			"columnDescription": "角色名称",
+			"columnName": "strRoleName"
+		}, {
+			"columnType": "string",
+			"columnDescription": "功能权限",
+			"columnName": "strFunctionCodes"
+		}, {
+			"columnType": "string",
+			"columnDescription": "机构权限",
+			"columnName": "branch_codes",
+            "showColumn" : "table:Aml_Branch.branch_name"
+		}],
+		"dataSourceName": "",
+		"logicIdColumnSet": ["strRoleName"],
+        "keyNameColumnList": ["strRoleCode","strRoleName"],
+        "cacheRule": "table"
+	}]
+}

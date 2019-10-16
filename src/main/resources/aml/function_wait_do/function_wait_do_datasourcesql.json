@@ -1,0 +1,11 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["CREATE TABLE `Aml_Wait_DoUser` (`strWaitCode` VARCHAR(45) NOT NULL,`strWaitName` VARCHAR(200),`strUserCodes` VARCHAR(2000) NOT NULL,PRIMARY KEY (`strWaitCode`))ENGINE = InnoDB;"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP TABLE `Aml_Wait_DoUser`;"]
+	},{
+		"updateSqlList": ["CREATE TABLE Aml_Wait_DoUser (strWaitCode VARCHAR(45) NOT NULL,strWaitName VARCHAR(200),strUserCodes VARCHAR(2000) NOT NULL,PRIMARY KEY (strWaitCode));"],
+		"dataSourceName": "aml_sqlserver",
+		"initSqlList": ["DROP TABLE Aml_Wait_DoUser;"]
+	}]
+}

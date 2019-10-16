@@ -1,0 +1,64 @@
+{
+	"checkRuleTableList": [{
+		"columnDescriptionMap": {},
+		"columnTypeMap": {},
+		"checkRuleList": [ {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(finance_type),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(crime_type),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(danger_desc),emptyCheck|lengthCheck~1~512)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(address_status),amlConstCheck~sys_043)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(nationality_code),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}, {
+			"index": 0,
+			"level": 0,
+			"description": "",
+			"rule": "@CHECK(@COLUMN(address_area),emptyCheck)",
+			"optional": false,
+			"match": "",
+			"descriptionColumnMap": null,
+			"ruleColumnMap": null
+		}],
+		"tableName": "Aml_High_Risk_Area",
+		"dataSourceName": "",
+		"checkRuleTableMap": {}
+	}]
+}

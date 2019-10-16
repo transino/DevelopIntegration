@@ -1,0 +1,75 @@
+{
+	"entityDatasourceSqlList": [{
+		"updateSqlList": ["txtsql:aml_sus1104_view_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP FUNCTION if exists `aml_sus1104_view`;"]
+	},{
+		"updateSqlList": ["txtsql:func_dist_str_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP FUNCTION if exists `func_dist_str`;"]
+	},{
+		"updateSqlList": ["txtsql:func_rule_compare_risk_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP FUNCTION if exists `func_rule_compare_risk`;"]
+	},{
+		"updateSqlList": ["txtsql:func_rule_in_risk_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP FUNCTION if exists `func_rule_in_risk`;"]
+	},{
+		"updateSqlList": ["txtsql:func_suspcs_code_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP FUNCTION if exists `func_suspcs_code`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1101_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1101`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1102_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1102`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1103_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1103`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1104_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1104`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1105_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1105`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1106_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1106`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1107_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1107`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_1201_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel_1201`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_whitemodel_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_whitemodel`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_susmodel_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_susmodel`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_cust_dg_risk_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_cust_dg_risk`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_cust_ds_risk_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_cust_ds_risk`;"]
+	},{
+		"updateSqlList": ["txtsql:proc_cust_risk_sql.sql"],
+		"dataSourceName": "aml_mysql",
+		"initSqlList": ["DROP PROCEDURE  if exists `proc_cust_risk`;"]
+	}]
+}
