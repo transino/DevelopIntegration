@@ -129,6 +129,7 @@
                 </configuration>
             </plugin>
 
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -146,10 +147,6 @@
                             <resources>
                                 <resource>
                                     <directory>src/main/resources/aml</directory>
-                                    <!--<includes>-->
-                                    <!--<include>**/com/pingan/isc/**</include>-->
-                                    <!--</includes>-->
-                                    <!--
                                     <excludes>
                                         <exclude>
                                             **/webroot/**
@@ -161,14 +158,14 @@
                                             **/com/pab/**
                                         </exclude>
                                     </excludes>
-                                    -->
+
                                 </resource>
                             </resources>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
+            -->
         </plugins>
   </build>
   
