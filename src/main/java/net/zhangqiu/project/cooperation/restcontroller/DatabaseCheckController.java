@@ -1,6 +1,8 @@
 package net.zhangqiu.project.cooperation.restcontroller;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import net.zhangqiu.context.EnvironmentContext;
 import net.zhangqiu.project.cooperation.framework.NavigationContext;
@@ -31,7 +33,9 @@ public class DatabaseCheckController {
 	}
 	
 	@RequestMapping("/cooperation/check/showDatabaseCheck")
-	public ModelAndView showDatabaseCheck() {
+	public ModelAndView showDatabaseCheck(HttpServletRequest request,HttpServletResponse response) throws Exception{
+        //request.getRequestDispatcher("http://localhost:8082/aml").forward(request,response);
+        //response.sendRedirect("http://localhost:8082/aml");
 		ModelAndView modelAndView = new ModelAndView("/cooperation/check/databasecheck");
 		modelAndView.addObject("datasourcelist", entityContext.getEntityDatasourceMap().keySet());
 		modelAndView.addObject("currentdatasource", entityContext.getEntityDatasourceKey(environmentContext.getDefaultProjectName(), entityContext.getDefaultDatasourceNameMap().get(environmentContext.getDefaultProjectName())));
