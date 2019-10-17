@@ -238,7 +238,7 @@ public class EntityContext {
 	@Qualifier("apacheTomcatPool")
     ConnectionPool connectionPool;
 	private void initEntityDatasourceFile() throws Exception{
-		File entityProjectFiles = new File(environmentContext.getResourcesPath());
+        File entityProjectFiles = new File(EntityContext.class.getClassLoader().getResource("").getFile());
 		if(entityProjectFiles.exists()){
 			File[] projectFiles = entityProjectFiles.listFiles();
 			for(File projectFile : projectFiles){
